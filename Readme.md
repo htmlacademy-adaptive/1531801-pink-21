@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Илья Хазан](https://up.htmlacademy.ru/adaptive/21/user/1531801).
-* Наставник: `Неизвестно`.
+* Наставник: [Артур Трифонов](https://up.htmlacademy.ru/adaptive/21/user/20140).
 
 ---
 
