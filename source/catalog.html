@@ -17,121 +17,130 @@
       </button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="index.html">Главная</a>
+          <a class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a>Фотографии</a>
+          <a class="main-nav__link--current main-nav__link">Фотографии</a>
         </li>
         <li class="main-nav__item">
-          <a href="form.html">Конкурс</a>
+          <a class="main-nav__link" href="form.html">Конкурс</a>
         </li>
         <li class="main-nav__item">
-          <a href="#">HTML Academy</a>
+          <a class="main-nav__link" href="#">HTML Academy</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__catalog-title">Фотографии пользователей</h1>
+    <h1 class="page-main__title">Фотографии пользователей</h1>
     <section class="photos">
       <header class="photos__header">
+        <h2 class="visually-hidden">Подборка последних публикаций Пинк</h2>
         <p class="photos__intro">Взгляните на фотографии, которые выкладывают пользователи!</p>
         <p class="photos__intro">Видите, как не хватает ваших?</p>
       </header>
       <ul class="photos__list">
         <li>
-          <figure class="photos__item photos__item--best">
+          <article class="photos__item photos__item--best">
             <img src="https://via.placeholder.com/320x137" alt="Панорама дня, вид сверху на лес">
-            <figcaption>
-              <span class="photos__author-name">Анна</span>
-              <span class="photos__time">5 минут назад</p>
-                <blockquote class="photos__text">
-                  Прыгать или нет? Напишите в
-                  комментарии свой совет и
-                  смотрите прямую трансляцию в
-                  перископе, задавайте свои вопросы!
-                </blockquote>
-                <span class="photos__like-counter">Нравится: 215</span>
-            </figcaption>
-          </figure>
+            <span class="photos__author-name">Анна</span>
+            <span class="photos__time">5 минут назад</span>
+            <blockquote class="photos__text">
+              Прыгать или нет? Напишите в
+              комментарии свой совет и
+              смотрите прямую трансляцию в
+              перископе, задавайте свои вопросы!
+            </blockquote>
+            <a href="">
+              <span class="visually-hidden">Поставить лайк</span>
+            </a>
+            <span class="photos__like-counter">Нравится: 215</span>
+          </article>
         </li>
         <li>
-          <figure class="photos__item">
+          <article class="photos__item">
             <img src="https://via.placeholder.com/280x180" alt="Камера на штативе">
-            <figcaption>
-              <span class="photos__author-name">Левон</span>
-              <span class="photos__time">5 часов назад</p>
-                <blockquote class="photos__text">
-                  Вчера он на луну летал, сегодня в руки к нам попал.
-                </blockquote>
-                <span class="photos__like-counter">Нравится: 356</span>
-            </figcaption>
-          </figure>
+            <span class="photos__author-name">Левон</span>
+            <span class="photos__time">5 часов назад</span>
+            <blockquote class="photos__text">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </blockquote>
+            <a href="">
+              <span class="visually-hidden">Поставить лайк</span>
+            </a>
+            <span class="photos__like-counter">Нравится: 356</span>
+          </article>
         </li>
         <li>
-          <figure class="photos__item">
+          <article class="photos__item">
             <img src="https://via.placeholder.com/280x180" alt="Барабанная установка">
-            <figcaption>
-              <span class="photos__author-name">Антон</span>
-              <span class="photos__time">12 часов назад</p>
-                <blockquote class="photos__text">
-                  Соседи будут рады!
-                </blockquote>
-                <span class="photos__like-counter">Нравится: 666</span>
-            </figcaption>
-          </figure>
+
+            <span class="photos__author-name">Антон</span>
+            <span class="photos__time">12 часов назад</span>
+            <blockquote class="photos__text">
+              Соседи будут рады!
+            </blockquote>
+            <a href="">
+              <span class="visually-hidden">Поставить лайк</span>
+            </a>
+            <span class="photos__like-counter">Нравится: 666</span>
+          </article>
         </li>
         <li>
-          <figure class="photos__item">
+          <article class="photos__item">
             <img src="https://via.placeholder.com/280x180" alt="Дверь с решеткой">
-            <figcaption>
-              <span class="photos__author-name">Борис</span>
-              <span class="photos__time">20 часов назад</p>
-                <blockquote class="photos__text">
-                  Здесь могла быть ваша цитата о высоком и вечном.
-                </blockquote>
-                <span class="photos__like-counter">Нравится: 215</span>
-            </figcaption>
-          </figure>
+            <span class="photos__author-name">Борис</span>
+            <span class="photos__time">20 часов назад</span>
+            <blockquote class="photos__text">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </blockquote>
+            <a href="">
+              <span class="visually-hidden">Поставить лайк</span>
+            </a>
+            <span class="photos__like-counter">Нравится: 215</span>
+          </article>
         </li>
         <li>
-          <figure class="photos__item">
+          <article class="photos__item">
             <img src="https://via.placeholder.com/280x180" alt="Ярмарка в шатре">
-            <figcaption>
-              <span class="photos__author-name">Сергей</span>
-              <span class="photos__time">25 часов назад</p>
-                <blockquote class="photos__text">
-                  Самая кубанская в мире!
-                </blockquote>
-                <span class="photos__like-counter">Нравится: 4</span>
-            </figcaption>
-          </figure>
+            <span class="photos__author-name">Сергей</span>
+            <span class="photos__time">25 часов назад</span>
+            <blockquote class="photos__text">
+              Самая кубанская в мире!
+            </blockquote>
+            <a href="">
+              <span class="visually-hidden">Поставить лайк</span>
+            </a>
+            <span class="photos__like-counter">Нравится: 4</span>
+          </article>
         </li>
         <li>
-          <figure class="photos__item">
+          <article class="photos__item">
             <img src="https://via.placeholder.com/280x180" alt="Ноги, свешенные со скалы">
-            <figcaption>
-              <span class="photos__author-name">Максим</span>
-              <span class="photos__time">40 часов назад</p>
-                <blockquote class="photos__text">
-                  Где снег-то?
-                </blockquote>
-                <span class="photos__like-counter">Нравится: 150</span>
-            </figcaption>
-          </figure>
+            <span class="photos__author-name">Максим</span>
+            <span class="photos__time">40 часов назад</span>
+            <blockquote class="photos__text">
+              Где снег-то?
+            </blockquote>
+            <a href="">
+              <span class="visually-hidden">Поставить лайк</span>
+            </a>
+            <span class="photos__like-counter">Нравится: 150</span>
+          </article>
         </li>
         <li>
-          <figure class="photos__item">
+          <article class="photos__item">
             <img src="https://via.placeholder.com/280x180" alt="Вид на крыло самолёта и рассвет">
-            <figcaption>
-              <span class="photos__author-name">Надежда</span>
-              <span class="photos__time">45 часов назад</p>
-                <blockquote class="photos__text">
-                  Всем GM и взаимные лайки!
-                </blockquote>
-                <span class="photos__like-counter">Нравится: 2560</span>
-            </figcaption>
-          </figure>
+            <span class="photos__author-name">Надежда</span>
+            <span class="photos__time">45 часов назад</span>
+            <blockquote class="photos__text">
+              Всем GM и взаимные лайки!
+            </blockquote>
+            <a href="">
+              <span class="visually-hidden">Поставить лайк</span>
+            </a>
+            <span class="photos__like-counter">Нравится: 2560</span>
+          </article>
         </li>
       </ul>
     </section>
@@ -143,17 +152,17 @@
       </header>
       <img class="editor__image" src="https://via.placeholder.com/280x374" alt="Зимняя просёлочная дорога">
       <div class="editor__settings">
-        <button class="editor__set editor__set--cut"></button>
-        <button class="editor__set editor__set--fill"></button>
-        <button class="editor__set editor__set--contrast"></button>
+        <button class="editor__set editor__set--cut" aria-label="Обрезка"></button>
+        <button class="editor__set editor__set--fill" aria-label="Заливка"></button>
+        <button class="editor__set editor__set--contrast" aria-label="Контраст"></button>
       </div>
       <div class="editor__range-controls">
         <div class="editor__scale"></div>
-        <div class="editor__toggle" tabindex="0" aria-label="Уменьшить стоимость"></div>
+        <div class="editor__toggle" tabindex="0" aria-label="Регулировка интенсивности эффекта"></div>
       </div>
       <div class="editor__button-group">
-        <button class="editor__button button">Запостить</button>
-        <button class="editor__button editor__button--disabled button">Отмена</button>
+        <button class="editor__button--post button">Запостить</button>
+        <button class="editor__button--cancel button">Отмена</button>
       </div>
     </section>
   </main>
