@@ -41,7 +41,8 @@
       </header>
       <ul class="photos__list">
         <li>
-          <article class="photos__item photos__item--best">
+          <div class="photos__item photos__item--best">
+            <h3 class="visually-hidden">Панорама дня</h3>
             <img src="https://via.placeholder.com/320x137" alt="Панорама дня, вид сверху на лес">
             <span class="photos__author-name">Анна</span>
             <span class="photos__time">5 минут назад</span>
@@ -51,28 +52,24 @@
               смотрите прямую трансляцию в
               перископе, задавайте свои вопросы!
             </blockquote>
-            <a href="">
-              <span class="visually-hidden">Поставить лайк</span>
-            </a>
+            <button aria-label="Поставить лайк"></button>
             <span class="photos__like-counter">Нравится: 215</span>
-          </article>
+          </div>
         </li>
         <li>
-          <article class="photos__item">
+          <div class="photos__item">
             <img src="https://via.placeholder.com/280x180" alt="Камера на штативе">
             <span class="photos__author-name">Левон</span>
             <span class="photos__time">5 часов назад</span>
             <blockquote class="photos__text">
               Вчера он на луну летал, сегодня в руки к нам попал.
             </blockquote>
-            <a href="">
-              <span class="visually-hidden">Поставить лайк</span>
-            </a>
+            <button aria-label="Поставить лайк"></button>
             <span class="photos__like-counter">Нравится: 356</span>
-          </article>
+          </div>
         </li>
         <li>
-          <article class="photos__item">
+          <div class="photos__item">
             <img src="https://via.placeholder.com/280x180" alt="Барабанная установка">
 
             <span class="photos__author-name">Антон</span>
@@ -80,67 +77,57 @@
             <blockquote class="photos__text">
               Соседи будут рады!
             </blockquote>
-            <a href="">
-              <span class="visually-hidden">Поставить лайк</span>
-            </a>
+            <button aria-label="Поставить лайк"></button>
             <span class="photos__like-counter">Нравится: 666</span>
-          </article>
+          </div>
         </li>
         <li>
-          <article class="photos__item">
+          <div class="photos__item">
             <img src="https://via.placeholder.com/280x180" alt="Дверь с решеткой">
             <span class="photos__author-name">Борис</span>
             <span class="photos__time">20 часов назад</span>
             <blockquote class="photos__text">
               Здесь могла быть ваша цитата о высоком и вечном.
             </blockquote>
-            <a href="">
-              <span class="visually-hidden">Поставить лайк</span>
-            </a>
+            <button aria-label="Поставить лайк"></button>
             <span class="photos__like-counter">Нравится: 215</span>
-          </article>
+          </div>
         </li>
         <li>
-          <article class="photos__item">
+          <div class="photos__item">
             <img src="https://via.placeholder.com/280x180" alt="Ярмарка в шатре">
             <span class="photos__author-name">Сергей</span>
             <span class="photos__time">25 часов назад</span>
             <blockquote class="photos__text">
               Самая кубанская в мире!
             </blockquote>
-            <a href="">
-              <span class="visually-hidden">Поставить лайк</span>
-            </a>
+            <button aria-label="Поставить лайк"></button>
             <span class="photos__like-counter">Нравится: 4</span>
-          </article>
+          </div>
         </li>
         <li>
-          <article class="photos__item">
+          <div class="photos__item">
             <img src="https://via.placeholder.com/280x180" alt="Ноги, свешенные со скалы">
             <span class="photos__author-name">Максим</span>
             <span class="photos__time">40 часов назад</span>
             <blockquote class="photos__text">
               Где снег-то?
             </blockquote>
-            <a href="">
-              <span class="visually-hidden">Поставить лайк</span>
-            </a>
+            <button aria-label="Поставить лайк"></button>
             <span class="photos__like-counter">Нравится: 150</span>
-          </article>
+          </div>
         </li>
         <li>
-          <article class="photos__item">
+          <div class="photos__item">
             <img src="https://via.placeholder.com/280x180" alt="Вид на крыло самолёта и рассвет">
             <span class="photos__author-name">Надежда</span>
             <span class="photos__time">45 часов назад</span>
             <blockquote class="photos__text">
               Всем GM и взаимные лайки!
             </blockquote>
-            <a href="">
-              <span class="visually-hidden">Поставить лайк</span>
-            </a>
+            <button aria-label="Поставить лайк"></button>
             <span class="photos__like-counter">Нравится: 2560</span>
-          </article>
+          </div>
         </li>
       </ul>
     </section>
@@ -156,13 +143,24 @@
         <button class="editor__set editor__set--fill" aria-label="Заливка"></button>
         <button class="editor__set editor__set--contrast" aria-label="Контраст"></button>
       </div>
-      <div class="editor__range-controls">
-        <div class="editor__scale"></div>
-        <div class="editor__toggle" tabindex="0" aria-label="Регулировка интенсивности эффекта"></div>
+      <div class="editor__range-control range-control">
+        <div class="range-control__scale"></div>
+        <div class="range-control__toggle range-control__toggle--cut" tabindex="0" aria-label="Регулировка обрезки">
+        </div>
+      </div>
+      <div class="editor__range-control range-control">
+        <div class="range-control__scale"></div>
+        <div class="range-control__toggle range-control__toggle--fill" tabindex="0" aria-label="Регулировка заливки">
+        </div>
+      </div>
+      <div class="editor__range-control range-control">
+        <div class="range-control__scale"></div>
+        <div class="range-control__toggle range-control__toggle--contrast" tabindex="0"
+          aria-label="Регулировка контраста"></div>
       </div>
       <div class="editor__button-group">
-        <button class="editor__button--post button">Запостить</button>
-        <button class="editor__button--cancel button">Отмена</button>
+        <button class="editor__button button button--post">Запостить</button>
+        <button class="editor__button button button--cancel">Отмена</button>
       </div>
     </section>
   </main>
