@@ -1,0 +1,44 @@
+.download {
+  background-color: $blue-700;
+  background-image: url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  min-height: 462px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 38px;
+
+  .download__slogan {
+    margin: 0;
+    color: $white;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 300;
+    padding-top: 29px;
+    padding-bottom: 34px;
+    text-align: center;
+  }
+
+  .download__button {
+    color: $white;
+
+    &:hover {
+      color: $pink;
+      background-color: $white;
+    }
+
+    &:active {
+      color: $pink-opacity-3;
+      background-color: $white;
+    }
+  }
+
+  .download__info {
+    color: $white;
+  }
+
+  .download__list {
+    padding-top: 28px;
+    padding-bottom: 38px;
+  }
+}
+

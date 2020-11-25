@@ -1,0 +1,33 @@
+.features {
+  padding-bottom: 325px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $grey-200;
+
+  .features__intro {
+    margin: 0;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 300;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    text-align: center;
+  }
+
+  .features__title {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .features__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .features__description {
+    text-align: center;
+    color: $blue-700;
+  }
+}

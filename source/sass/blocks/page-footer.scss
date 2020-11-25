@@ -1,0 +1,22 @@
+.page-footer__contacts {
+  padding-top: 40px;
+}
+
+.page-footer__social {
+  padding: 40px;
+}
+
+.page-footer__copyright {
+  padding-bottom: 40px;
+}
+
+.page-footer__logo {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+
+  & path:hover {
+
+color: $pink;
+  }
+}
