@@ -1,0 +1,25 @@
+.cost-table {
+  border: 2px solid $grey-100;
+  border-collapse: collapse;
+
+  td,
+  th {
+    border: 2px solid $grey-100;
+    padding: 15px;
+  }
+}
+
+.cost-table__header {
+  text-transform: uppercase;
+  background-color: $blue-700;
+  color: $white;
+}
+
+.cost-table__usd-price {
+  font-weight: 300;
+}
+
+.cost-table__feature {
+  text-align: left;
+  font-weight: normal;
+}
