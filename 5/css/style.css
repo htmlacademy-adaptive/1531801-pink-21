@@ -1,0 +1,395 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../../fonts/opensanslight.woff2") format("woff2"), url("../../fonts/opensanslight.woff") format("woff"); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../../fonts/opensans.woff2") format("woff2"), url("../../fonts/opensans.woff") format("woff"); }
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../fonts/opensansbold.woff2") format("woff2"), url("../../fonts/opensansbold.woff") format("woff"); }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: none;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+a {
+  text-decoration: none; }
+
+.button {
+  display: block;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.contacts__intro {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  color: #283645;
+  text-align: center; }
+
+.contacts__text {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 35px; }
+
+.contacts__item {
+  font-size: 24px;
+  line-height: 33px;
+  color: #d22856;
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  font-style: normal; }
+
+.copyright__text {
+  font-size: 18px;
+  line-height: 18px;
+  color: #283645; }
+
+.download {
+  background-color: #283645;
+  background-image: url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  min-height: 462px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 38px; }
+
+.download__slogan {
+  margin: 0;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  padding-top: 29px;
+  padding-bottom: 34px;
+  text-align: center; }
+
+.download__button {
+  color: #ffffff; }
+  .download__button:hover {
+    color: #d22856;
+    background-color: #ffffff; }
+  .download__button:active {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: #ffffff; }
+
+.download__info {
+  color: #ffffff; }
+
+.download__list {
+  padding-top: 28px;
+  padding-bottom: 38px; }
+
+.features {
+  padding-bottom: 325px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f2f2f2; }
+
+.features__intro {
+  margin: 0;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  padding-top: 46px;
+  padding-bottom: 46px;
+  text-align: center; }
+
+.features__title {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center; }
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.features__description {
+  text-align: center;
+  color: #283645; }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.page-footer__contacts {
+  padding-top: 40px; }
+
+.page-footer__social {
+  padding: 40px; }
+
+.page-footer__copyright {
+  padding-bottom: 40px; }
+
+.page-footer__logo {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center; }
+
+.page-header {
+  background-color: #283645;
+  padding-top: 23px; }
+
+.page-header__logo {
+  margin-left: 20px; }
+
+.page-main__title {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  color: #ffffff; }
+
+.page-main__intro {
+  background-image: url("../../img/back-mobile.jpg");
+  padding-bottom: 35px;
+  padding-top: 35px; }
+
+.page__body {
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px; }
+
+.research {
+  display: none; }
+
+.research__wrapper {
+  padding-top: 50px;
+  padding-bottom: 100px; }
+
+.research__title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700; }
+
+.research__info {
+  font-size: 18px;
+  line-height: 30px; }
+
+.research__link {
+  font-size: 18px;
+  line-height: 30px;
+  color: #d22856;
+  text-decoration: underline; }
+
+.reviews__item {
+  margin: 0; }
+
+.reviews__wrapper {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.reviews__author-name {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center; }
+
+.reviews__author-info {
+  color: #283645;
+  text-align: center; }
+
+.reviews__text {
+  margin-top: 24px;
+  margin-bottom: 43px;
+  color: #283645;
+  text-align: center;
+  line-height: 30px; }
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.site-list__item {
+  background-color: #283645;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid #000000; }
+  .site-list__item a {
+    color: #ffffff; }
+
+.cost-table {
+  border: 2px solid #e5e5e5;
+  border-collapse: collapse; }
+  .cost-table td,
+  .cost-table th {
+    border: 2px solid #e5e5e5;
+    padding: 15px; }
+
+.cost-table__header {
+  text-transform: uppercase;
+  background-color: #283645;
+  color: #ffffff; }
+
+.cost-table__usd-price {
+  font-weight: 300; }
+
+.cost-table__feature {
+  text-align: left;
+  font-weight: normal; }
+
+.form {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.form__intro {
+  line-height: 30px;
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 55px; }
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.form__item {
+  padding-bottom: 30px; }
+
+.form__group {
+  border: 2px solid #e5e5e5;
+  border-radius: 1px; }
+  .form__group--name-info {
+    border: none; }
+  .form__group--achievements {
+    margin-bottom: 45px; }
+  .form__group--contacts {
+    margin-bottom: 45px; }
+  .form__group--app {
+    margin-bottom: 45px; }
+  .form__group--feedback {
+    margin-bottom: 45px; }
+
+.form__group-title {
+  text-transform: uppercase;
+  color: #d22856;
+  text-align: center; }
+  .form__group-title--textarea {
+    font-size: inherit;
+    font-weight: inherit; }
+
+.form__legend {
+  display: block;
+  padding-top: 45px;
+  line-height: 30px;
+  text-transform: uppercase; }
+
+.form__required-sign {
+  color: #d22856; }
+
+.text-field__label {
+  color: #d22856;
+  line-height: 30px;
+  text-transform: uppercase; }
+
+.text-field__input {
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  font-family: inherit;
+  height: 60px; }
+  .text-field__input::-moz-placeholder {
+    color: #283645;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 22px;
+    padding-right: 22px; }
+  .text-field__input::placeholder {
+    color: #283645;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 22px;
+    padding-right: 22px; }
+
+.checkbox-field__label {
+  color: #283645;
+  font-size: 18px;
+  line-height: 30px; }
+
+.modal {
+  display: none; }
+
+.modal__caption {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  padding-top: 44px;
+  padding-bottom: 37px; }
+
+.modal__text {
+  text-align: center;
+  padding-bottom: 50px; }
+
+.form-button {
+  color: #ffffff;
+  background-color: #2aab6d;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 23px;
+  padding-top: 23px;
+  width: 100%; }
+
+.form-button__wrapper {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 163px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center; }
+
+/*# sourceMappingURL=style.css.map */
