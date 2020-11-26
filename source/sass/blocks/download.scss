@@ -28,7 +28,7 @@
   }
 
   &:active {
-    color: $pink-opacity-3;
+    color: rgba($pink, 0.3);
     background-color: $white;
   }
 }
