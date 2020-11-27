@@ -1,0 +1,53 @@
+.form {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form__intro {
+  line-height: 30px;
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__item {
+  padding-bottom: 30px;
+}
+
+.form__group {
+  border: 2px solid $grey-100;
+  border-radius: 1px;
+  margin-bottom: 45px;
+
+  &--name-info {
+    border: none;
+  }
+}
+
+.form__group-title {
+  text-transform: uppercase;
+  color: $pink;
+  text-align: center;
+
+  &--textarea {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+}
+
+.form__legend {
+  display: block;
+  padding-top: 45px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form__required-sign {
+  color: $pink;
+}
