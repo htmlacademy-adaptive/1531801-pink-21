@@ -23,25 +23,10 @@
 .form__group {
   border: 2px solid $grey-100;
   border-radius: 1px;
+  margin-bottom: 45px;
 
   &--name-info {
     border: none;
-  }
-
-  &--achievements {
-    margin-bottom: 45px;
-  }
-
-  &--contacts {
-    margin-bottom: 45px;
-  }
-
-  &--app {
-    margin-bottom: 45px;
-  }
-
-  &--feedback {
-    margin-bottom: 45px;
   }
 }
 
