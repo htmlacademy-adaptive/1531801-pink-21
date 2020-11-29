@@ -8,4 +8,34 @@
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  &--post {
+    color: $pink;
+    border: 3px solid $pink;
+
+    &:hover {
+      color: $white;
+      background-color: $pink;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+      background-color: $pink;
+    }
+  }
+
+  &--cancel {
+    color: rgba($blue-700, 0.1);
+    border: 3px solid rgba($blue-700, 0.1);
+
+    &:hover {
+      color: rgba($blue-700, 0.3);
+      border: 3px solid rgba($blue-700, 0.3);
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+      background-color: rgba($blue-700, 0.3);
+    }
+  }
 }
