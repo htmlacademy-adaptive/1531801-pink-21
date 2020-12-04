@@ -1,11 +1,36 @@
 .download {
   background-color: $blue-700;
-  background-image: url("../../img/back-mobile.jpg");
+  background-image: url("../../img/bg-small.jpg");
   background-repeat: no-repeat;
-  min-height: 462px;
-  padding-left: 20px;
-  padding-right: 20px;
+  background-position: 50% -27%;
+  background-size: 100%;
   padding-bottom: 38px;
+
+  @media (min-width: $breakpoint-medium) {
+    background-image: url("../../img/bg-medium.jpg");
+    background-position: 0 0;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    background-image: url("../../img/bg-large.jpg");
+  }
+}
+
+.download__wrapper {
+  @include wrapper;
+  height: 640px;
+
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+.download__image {
+  @media (min-width: $breakpoint-medium) {
+    order: 5;
+  }
 }
 
 .download__slogan {
@@ -17,10 +42,25 @@
   padding-top: 29px;
   padding-bottom: 34px;
   text-align: center;
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 40px;
+    line-height: 48px;
+    width: 40%;
+    padding-left: 55px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    font-size: 50px;
+    line-height: 68px;
+    width: 30%;
+    padding-left: 25px;
+  }
 }
 
 .download__button {
   color: $white;
+  width: 100%;
 
   &:hover {
     color: $pink;
@@ -35,9 +75,41 @@
 
 .download__info {
   color: $white;
+  text-align: center;
+  font-weight: 300;
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 18px;
+    text-align: center;
+    width: 50%;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    font-size: 18px;
+    text-align: center;
+    width: 33%;
+  }
 }
 
 .download__list {
   padding-top: 28px;
   padding-bottom: 38px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $breakpoint-medium) {
+    width: 50%;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: 30%;
+  }
+}
+
+.download__link-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 40px;
 }

@@ -1,5 +1,15 @@
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .copyright__text {
-  font-size: 18px;
   line-height: 18px;
-  color: $blue-700;
+  padding-right: 10px;
+
+  @media (min-width: $breakpoint-large) {
+    font-size: 18px;
+  }
 }

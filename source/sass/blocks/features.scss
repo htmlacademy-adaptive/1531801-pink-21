@@ -1,8 +1,9 @@
 .features {
-  padding-bottom: 325px;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: $grey-200;
+}
+
+.features__wrapper {
+  @include wrapper;
 }
 
 .features__intro {
@@ -13,21 +14,69 @@
   padding-top: 46px;
   padding-bottom: 46px;
   text-align: center;
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .features__title {
   font-size: 18px;
   font-weight: 700;
+
   text-align: center;
+
+  @media (min-width: $breakpoint-medium) {
+    text-align: left;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    text-align: center;
+  }
+}
+
+.features__description {
+  text-align: center;
+  color: $blue-700;
+
+  @media (min-width: $breakpoint-medium) {
+    text-align: left;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    text-align: center;
+  }
 }
 
 .features__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 325px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-left: 310px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 0;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
-.features__description {
-  text-align: center;
-  color: $blue-700;
+.features__item {
+  @media (min-width: $breakpoint-large) {
+    padding-top: 360px;
+  }
 }

@@ -1,0 +1,16 @@
+@mixin wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $breakpoint-medium) {
+    width: $breakpoint-medium;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: $breakpoint-large;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

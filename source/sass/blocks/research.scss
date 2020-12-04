@@ -1,11 +1,23 @@
 .research {
   display: none;
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    padding-left: 310px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 370px;
+    background-color: $grey-200;
+  }
 }
 
 .research__wrapper {
-  padding-top: 50px;
-  padding-bottom: 100px;
+  @include wrapper;
 }
+
 
 .research__title {
   font-size: 30px;
