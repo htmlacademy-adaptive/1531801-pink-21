@@ -1,14 +1,11 @@
-.contacts__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-
+.contacts {
   @media (min-width: $breakpoint-medium) {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
   }
 
-  @include wrapper;
   padding-top: 40px;
 }
 
@@ -62,7 +59,6 @@
 
   @media (min-width: $breakpoint-large) {
     width: 33%;
-    order: 1;
   }
 }
 
@@ -75,7 +71,7 @@
 
   @media (min-width: $breakpoint-large) {
     width: 33%;
-    order: 3;
+    order: 1;
   }
 }
 
@@ -88,6 +84,5 @@
 
   @media (min-width: $breakpoint-large) {
     width: 33%;
-    order: 2;
   }
 }

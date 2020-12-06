@@ -115,7 +115,7 @@
       <div class="reviews__wrapper">
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="reviews__list slider__list">
-          <div class="reviews__item slider__item slider__item--first">
+          <div class="reviews__item slider__item">
             <span class="reviews__author-name">Николай Петров</span>
             <p class="reviews__author-info">25 лет, водитель трамвая</p>
             <q class="reviews__text">
@@ -124,7 +124,7 @@
               фотографии!
             </q>
           </div>
-          <div class="reviews__item slider__item slider__item--second">
+          <div class="reviews__item slider__item slider__item--hidden">
             <span class="reviews__author-name">Иван Сидоров</span>
             <p class="reviews__author-info">36 лет, дизайнер</p>
             <q class="reviews__text">
@@ -133,7 +133,7 @@
               фотографии!
             </q>
           </div>
-          <div class="reviews__item slider__item slider__item--third">
+          <div class="reviews__item slider__item slider__item--hidden">
             <span class="reviews__author-name">Сергей Серов</span>
             <p class="reviews__author-info">18 лет, студент</p>
             <q class="reviews__text">
@@ -167,9 +167,9 @@
         <h2 class="visually-hidden">Стоимость подписки</h2>
         <table class="cost-table">
           <thead class="cost-table__header">
-          <tr>
-            <th class="cost-table__feature-name--empty">
-            </th>
+            <tr>
+              <th class="cost-table__feature-name--empty">
+              </th>
               <th class="cost-table__header-item" scope="col">
                 <p class="cost-table__title">База</p>
                 <p class="cost-table__usd-price">1,99 USD</p>
@@ -182,7 +182,7 @@
                 <p class="cost-table__title">Анлим</p>
                 <p class="cost-table__usd-price">9,99 USD</p>
               </th scope="col">
-          </tr>
+            </tr>
           </thead>
           <tbody>
             <tr>
@@ -251,36 +251,37 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__wrapper">
-        <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__intro">
-          <p>Остались вопросы?</p>
-          <p>Свяжитесь с нами!</p>
-        </div>
-        <div class="contacts__phone">
-          <p class="contacts__text">Звоните:</p>
-          <a class="contacts__item" href="tel:+78125556666">
-            +7 (812) 555-66-66
-          </a>
-          </p>
-        </div>
-        <div class="contacts__email">
-          <p class="contacts__text">Пишите:</p>
-          <a class="contacts__item" href="mailto:mail@htmlacademy.ru">
-            mail@htmlacademy.ru
-          </a>
-          </p>
-        </div>
-        <div class="contacts__address">
-          <p class="contacts__text">Приезжайте в гости:</p>
-          <address class="contacts__item">ул. Большая <br>
-            Конюшенная, 19/8</address>
-        </div>
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__intro">
+        <p>Остались вопросы?</p>
+        <p>Свяжитесь с нами!</p>
+      </div>
+      <div class="contacts__phone">
+        <p class="contacts__text">Звоните:</p>
+        <a class="contacts__item" href="tel:+78125556666">
+          +7 (812) 555-66-66
+        </a>
+        </p>
+      </div>
+      <div class="contacts__email">
+        <p class="contacts__text">Пишите:</p>
+        <a class="contacts__item" href="mailto:mail@htmlacademy.ru">
+          mail@htmlacademy.ru
+        </a>
+        </p>
+      </div>
+      <div class="contacts__address">
+        <p class="contacts__text">Приезжайте в гости:</p>
+        <address class="contacts__item">ул. Большая <br>
+          Конюшенная, 19/8</address>
       </div>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Интерактивная карта</h2>
-      <iframe class="page-footer__frame" src=""></iframe>
+      <iframe class="map__frame"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1607164911987!5m2!1sru!2sru"
+        width="600" height="450" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0">
+      </iframe>
     </section>
   </main>
   <footer class="page-footer">

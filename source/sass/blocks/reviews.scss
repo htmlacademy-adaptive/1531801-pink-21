@@ -1,9 +1,3 @@
-.reviews {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
 .reviews__wrapper {
   @include wrapper;
   padding-top: 50px;

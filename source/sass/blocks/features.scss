@@ -58,9 +58,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+
   padding-bottom: 325px;
 
   @media (min-width: $breakpoint-medium) {
@@ -69,6 +67,8 @@
   }
 
   @media (min-width: $breakpoint-large) {
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
     flex-direction: row;
     justify-content: space-around;
@@ -76,6 +76,8 @@
 }
 
 .features__item {
+  padding-bottom: 40px;
+
   @media (min-width: $breakpoint-large) {
     padding-top: 360px;
   }
