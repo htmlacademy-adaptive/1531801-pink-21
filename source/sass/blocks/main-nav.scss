@@ -6,8 +6,14 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 30px;
-  right: 20px;
+  background: none;
+  border: none;
+  top: 20px;
+  left: calc(50% + 80px);
+
+  @media (min-width: $breakpoint-medium) {
+    left: calc(50% + 250px);
+  }
 
   @media (min-width: $breakpoint-large) {
     display: none;

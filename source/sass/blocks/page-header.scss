@@ -3,12 +3,8 @@
 }
 
 .page-header__wrapper {
-  position: relative;
-  width: 100%;
-
-  @include wrapper;
-
   @media (min-width: $breakpoint-large) {
+    @include wrapper;
     background-color: rgba($black, 0.3);
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -20,8 +16,20 @@
 }
 
 .page-header__logo {
+  width: 320px;
+  margin: 0 auto;
   display: block;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 15px;
-  align-self: center;
+
+  @media (min-width: $breakpoint-medium) {
+    width: $breakpoint-medium;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: 100%;
+    align-self: center;
+  }
 }
