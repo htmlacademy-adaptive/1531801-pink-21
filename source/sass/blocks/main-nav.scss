@@ -3,3 +3,19 @@
   padding: 0;
   list-style: none;
 }
+
+.main-nav__toggle {
+  position: absolute;
+  background: none;
+  border: none;
+  top: 20px;
+  left: calc(50% + 80px);
+
+  @media (min-width: $breakpoint-medium) {
+    left: calc(50% + 250px);
+  }
+
+  @media (min-width: $breakpoint-large) {
+    display: none;
+  }
+}

@@ -1,9 +1,36 @@
+.contacts {
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  padding-top: 40px;
+}
+
 .contacts__intro {
+  p {
+    margin: 0;
+  }
+
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
   color: $blue-700;
   text-align: center;
+  justify-self: center;
+
+  @media (min-width: $breakpoint-medium) {
+    width: 100%;
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .contacts__text {
@@ -18,8 +45,44 @@
   font-size: 24px;
   line-height: 33px;
   color: $pink;
-  display: block;
   text-align: center;
   font-weight: 300;
   font-style: normal;
+}
+
+.contacts__phone {
+  text-align: center;
+
+  @media (min-width: $breakpoint-medium) {
+    width: 50%;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: 33%;
+  }
+}
+
+.contacts__email {
+  text-align: center;
+
+  @media (min-width: $breakpoint-medium) {
+    width: 50%;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: 33%;
+    order: 1;
+  }
+}
+
+.contacts__address {
+  text-align: center;
+
+  @media (min-width: $breakpoint-medium) {
+    width: 100%;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    width: 33%;
+  }
 }

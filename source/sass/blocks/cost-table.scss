@@ -2,10 +2,8 @@
   border: 2px solid $grey-100;
   border-collapse: collapse;
 
-  td,
-  th {
-    border: 2px solid $grey-100;
-    padding: 15px;
+  p {
+    margin: 0;
   }
 }
 
@@ -15,11 +13,44 @@
   color: $white;
 }
 
+.cost-table__header-item {
+  min-width: 280px;
+  padding: 15px;
+}
+
 .cost-table__usd-price {
   font-weight: 300;
 }
 
-.cost-table__feature {
+.cost-table__availability-cell {
+  border: 2px solid $grey-100;
+  padding: 15px;
+}
+
+.cost-table__feature-name {
+  display: none;
   text-align: left;
   font-weight: normal;
+  border-bottom: 2px solid $grey-100;
+  padding: 15px;
+
+  @media (min-width: $breakpoint-medium) {
+    display: block;
+  }
+
+  &--inside {
+    text-transform: uppercase;
+
+    @media (min-width: $breakpoint-medium) {
+      display: none;
+    }
+  }
+
+  &--empty {
+    display: none;
+
+    @media (min-width: $breakpoint-medium) {
+      display: block;
+    }
+  }
 }
