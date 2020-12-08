@@ -34,4 +34,11 @@
   a {
     color: $white;
   }
+
+  &--current a {
+    @media (min-width: $breakpoint-large) {
+      padding-bottom: 10px;
+      border-bottom: 2px solid $white;
+    }
+  }
 }
