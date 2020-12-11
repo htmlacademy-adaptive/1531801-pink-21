@@ -105,8 +105,12 @@
       display: flex;
       flex-direction: column;
 
-      :nth-child(3n) {
+      :nth-child(3n - 1) {
         order: 1;
+      }
+
+      :nth-child(3n) {
+        order: 2;
       }
     }
 
