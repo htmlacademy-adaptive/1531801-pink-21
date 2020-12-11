@@ -1,6 +1,5 @@
-.form {
-  padding-left: 20px;
-  padding-right: 20px;
+.form__header {
+  @include wrapper;
 }
 
 .form__intro {
@@ -8,25 +7,137 @@
   text-align: center;
   padding-top: 55px;
   padding-bottom: 55px;
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 18px;
+  }
+}
+
+.form__contest-form {
+  @media (min-width: $breakpoint-medium) {
+    @include wrapper;
+    display: grid;
+    column-gap: 75px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    @include wrapper;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "name-info app" "contacts contacts"
+      "achievements achievements"
+      "feedback feedback";
+  }
+}
+
+.form__group-wrapper--name-info {
+  @media (min-width: $breakpoint-large) {
+    grid-area: name-info;
+  }
+}
+
+.form__group-wrapper--app {
+  @media (max-width: $breakpoint-small-only) {
+    background: $grey-200;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    grid-area: app;
+  }
+}
+
+.form__group-wrapper--contacts {
+  @media (min-width: $breakpoint-large) {
+    grid-area: contacts;
+  }
+}
+
+.form__group-wrapper--achievements {
+  @media (max-width: $breakpoint-small-only) {
+    background: $grey-200;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    grid-area: achievements;
+  }
+}
+
+.form__group-wrapper--feedback {
+  @media (min-width: $breakpoint-large) {
+    grid-area: feedback;
+  }
 }
 
 .form__list {
-  margin: 0;
   padding: 0;
+  margin: 0;
   list-style: none;
-}
 
-.form__item {
-  padding-bottom: 30px;
-}
-
-.form__group {
-  border: 2px solid $grey-100;
-  border-radius: 1px;
-  margin-bottom: 45px;
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+  }
 
   &--name-info {
-    border: none;
+    padding-left: 0;
+    padding-right: 0;
+
+    @media (min-width: $breakpoint-medium) {
+      .form__item {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+      }
+    }
+  }
+
+  &--app {
+    @media (min-width: $breakpoint-large) {
+      padding-left: 75px;
+      padding-bottom: 45px;
+    }
+  }
+
+  &--achievements {
+    @media (max-width: $breakpoint-before-large) {
+      display: flex;
+      flex-direction: column;
+
+      :nth-child(3n - 1) {
+        order: 1;
+      }
+
+      :nth-child(3n) {
+        order: 2;
+      }
+    }
+
+    @media (min-width: $breakpoint-large) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 50px;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $breakpoint-medium) {
+      .form__item {
+        display: grid;
+      }
+
+      .form__label {
+        order: 1;
+        padding-left: 18px;
+      }
+    }
+
+    @media (min-width: $breakpoint-large) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 75px;
+    }
   }
 }
 
@@ -34,18 +145,112 @@
   text-transform: uppercase;
   color: $pink;
   text-align: center;
+  margin-bottom: 40px;
+
+  @media (max-width: $breakpoint-small-only) {
+    padding-top: 40px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 30px;
+  }
 
   &--textarea {
     font-size: inherit;
     font-weight: inherit;
+
+    @media (max-width: $breakpoint-small-only) {
+      padding-top: 40px;
+    }
+  }
+}
+
+.form__group {
+  border: none;
+  padding: 0;
+
+  @media (max-width: $breakpoint-small-only) {
+    @include wrapper;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    border: 2px solid $grey-100;
+    border-radius: 1px;
+    margin-bottom: 45px;
+  }
+
+  &--name-info {
+    .form__label {
+      align-self: center;
+    }
+    border: none;
+  }
+
+  &--contacts {
+    .form__group-title {
+      @media (max-width: $breakpoint-small-only) {
+        @include visually-hidden;
+      }
+    }
+  }
+
+  &--feedback {
+    .form__item {
+      text-align: center;
+    }
+  }
+}
+
+.form__item {
+  padding-bottom: 30px;
+}
+
+.form__input {
+  @media (max-width: $breakpoint-small-only) {
+    width: 100%;
+  }
+}
+
+.form__submit-group {
+  display: grid;
+  gap: 30px;
+
+  @media (max-width: $breakpoint-small-only) {
+    @include wrapper;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form__submit-button {
+  @media (min-width: $breakpoint-medium) {
+    width: 296px;
+    align-self: center;
   }
 }
 
 .form__legend {
-  display: block;
-  padding-top: 45px;
   line-height: 30px;
   text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media (min-width: $breakpoint-medium) {
+    justify-self: end;
+  }
+
+  &--short {
+    @media (max-width: $breakpoint-before-large) {
+      @include visually-hidden;
+    }
+  }
 }
 
 .form__required-sign {
