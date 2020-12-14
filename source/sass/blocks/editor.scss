@@ -1,5 +1,33 @@
-.editor {
+.editor__wrapper--bg {
   background-color: $grey-200;
+}
+
+.editor__wrapper {
+  @include wrapper;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $breakpoint-medium) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image range-group"
+      "image button-group";
+    gap: 20px;
+  }
+}
+
+.editor__header {
+  @include wrapper;
+}
+
+.editor__intro {
+  line-height: 30px;
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 18px;
+  }
 }
 
 .editor__intro-wrapper {
@@ -15,16 +43,158 @@
 
 .editor__image {
   padding-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
+
+  @media (min-width: $breakpoint-medium) {
+    grid-area: image;
+    width: 300px;
+    height: 400px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 }
 
 .editor__settings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @media (min-width: $breakpoint-medium) {
+    display: none;
+  }
+}
+
+.editor__button-group {
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: $breakpoint-large) {
+    margin-top: 60px;
+    display: flex;
+  }
+}
+
+.editor__set {
+  width: 44px;
+  height: 44px;
+  position: relative;
+  background: transparent;
+  border: none;
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-.editor__button-group {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.editor__set--cut {
+  background-image: url("../../img/crop.svg");
+  background-repeat: no-repeat;
+}
+
+.editor__set--fill {
+  background-image: url("../../img/fill.svg");
+  background-repeat: no-repeat;
+}
+
+.editor__set--contrast {
+  background-image: url("../../img/contrast.svg");
+  background-repeat: no-repeat;
+}
+
+.editor__range-group {
+  @media (min-width: $breakpoint-medium) {
+    grid-area: range-group;
+    margin-top: 70px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-bottom: 0;
+  }
+}
+
+.editor__range-control {
+  border-bottom: 1px solid rgba($blue-700, 0.1);
+  position: relative;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 12px;
+    grid-area: range-control;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-top: 30px;
+  }
+
+  &--main {
+    @media (max-width: $breakpoint-small-only) {
+      display: block;
+    }
+
+    @media (min-width: $breakpoint-medium) {
+      display: none;
+    }
+  }
+
+  &--cut {
+    @media (max-width: $breakpoint-small-only) {
+      display: none;
+    }
+
+    @media (min-width: $breakpoint-medium) {
+      display: block;
+
+      ::before {
+        position: absolute;
+        content: "";
+        background-image: url("../../img/cut.svg");
+        background-repeat: no-repeat;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 44px;
+        height: 44px;
+      }
+    }
+  }
+
+  &--fill {
+    @media (max-width: $breakpoint-small-only) {
+      display: none;
+    }
+
+    @media (min-width: $breakpoint-medium) {
+      display: block;
+    }
+  }
+
+  &--contrast {
+    @media (max-width: $breakpoint-small-only) {
+      display: none;
+    }
+
+    @media (min-width: $breakpoint-medium) {
+      display: block;
+    }
+
+    @media (min-width: $breakpoint-large) {
+      border: none;
+    }
+  }
+}
+
+.editor__button {
+  width: 100%;
+  margin-bottom: 12px;
+
+  @media (min-width: $breakpoint-large) {
+    margin-bottom: 40px;
+    width: 183px;
+
+    margin-right: 44px;
+  }
 }

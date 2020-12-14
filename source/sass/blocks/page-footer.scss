@@ -11,6 +11,10 @@
 
 .page-footer__logo {
   text-align: center;
+
+  @media (max-width: $breakpoint-small-only) {
+    padding-top: 30px;
+  }
 }
 
 .page-footer__social {
