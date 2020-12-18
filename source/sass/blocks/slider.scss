@@ -3,5 +3,21 @@
 }
 
 .slider__item--active {
-  display: block;
+  display: flex;
+}
+
+.slider__toggle {
+  position: relative;
+  padding: 0;
+  border: none;
+  width: 6px;
+  height: 6px;
+  background-color: rgba($blue-700, 0.3);
+  border-radius: 50%;
+
+  &--current {
+    background-color: $white;
+    border: 3px solid $blue-700;
+    box-sizing: content-box;
+  }
 }

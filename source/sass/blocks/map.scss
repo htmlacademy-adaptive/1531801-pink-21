@@ -1,8 +1,22 @@
 .map {
-  padding-top: 40px;
   padding-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-bottom: 0;
+  }
+  /*  &::after {
+    position: absolute;
+
+    background-image: url("../../img/map-triangle.svg");
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 123px;
+    top: -90px;
+    left: calc(50% - 600px);
+  }*/
 }
 
 .map__frame {
@@ -14,6 +28,6 @@
   }
 
   @media (min-width: $breakpoint-large) {
-    height: 502px;
+    height: 497px;
   }
 }

@@ -30,11 +30,6 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M1.13659 0.00020839C0.986512 -0.00251551 0.837358 0.0214885 0.698091 0.0707781C0.558823 0.120068 0.432317 0.193625 0.326173 0.28703C0.22003 0.380436 0.136442 0.49176 0.0804303 0.614315C0.024419 0.73687 -0.00285856 0.868124 0.000236809 1.00019V3.00016C0.000236809 3.26537 0.119959 3.51972 0.333067 3.70725C0.546174 3.89478 0.83521 4.00014 1.13659 4.00014H48.8634C49.0135 4.00286 49.1626 3.97886 49.3019 3.92957C49.4412 3.88028 49.5677 3.80672 49.6738 3.71332C49.78 3.61991 49.8636 3.50859 49.9196 3.38603C49.9756 3.26348 50.0029 3.13222 49.9998 3.00016V1.00019C49.9998 0.734979 49.88 0.48063 49.6669 0.293097C49.4538 0.105563 49.1648 0.00020839 48.8634 0.00020839H1.13659ZM1.13659 10C0.986512 9.99731 0.837358 10.0213 0.698091 10.0706C0.558823 10.1199 0.432317 10.1935 0.326173 10.2869C0.22003 10.3803 0.136442 10.4916 0.0804303 10.6141C0.024419 10.7367 -0.00285856 10.868 0.000236809 11V13C0.000236809 13.2652 0.119959 13.5195 0.333067 13.7071C0.546174 13.8946 0.83521 14 1.13659 14H48.8634C49.0135 14.0027 49.1626 13.9787 49.3019 13.9294C49.4412 13.8801 49.5677 13.8065 49.6738 13.7131C49.78 13.6197 49.8636 13.5084 49.9196 13.3859C49.9756 13.2633 50.0029 13.132 49.9998 13V11C49.9998 10.7348 49.88 10.4805 49.6669 10.2929C49.4538 10.1054 49.1648 10 48.8634 10H1.13659ZM1.13659 19.9999C0.986512 19.9971 0.837358 20.0211 0.698091 20.0704C0.558823 20.1197 0.432317 20.1933 0.326173 20.2867C0.22003 20.3801 0.136442 20.4914 0.0804303 20.614C0.024419 20.7365 -0.00285856 20.8678 0.000236809 20.9998V22.9998C0.000236809 23.265 0.119959 23.5194 0.333067 23.7069C0.546174 23.8944 0.83521 23.9998 1.13659 23.9998H48.8634C49.0135 24.0025 49.1626 23.9785 49.3019 23.9292C49.4412 23.8799 49.5677 23.8064 49.6738 23.713C49.78 23.6196 49.8636 23.5082 49.9196 23.3857C49.9756 23.2631 50.0029 23.1319 49.9998 22.9998V20.9998C49.9998 20.7346 49.88 20.4803 49.6669 20.2927C49.4538 20.1052 49.1648 19.9999 48.8634 19.9999H1.13659Z"
-              fill="white" />
-          </svg>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
@@ -65,132 +60,108 @@
           <p class="photos__intro">Видите, как не хватает ваших?</p>
         </div>
       </header>
+      <h3 class="visually-hidden">Панорама дня</h3>
+      <img class="photos__image photos__image--best" src="img/panorama-mobile.jpg" width="320" height="137"
+        alt="Панорама дня, вид сверху на лес">
       <ul class="photos__list">
-        <li>
-          <h3 class="visually-hidden">Панорама дня</h3>
-          <img class="photos__image--best" src="img/panorama-mobile.jpg" width="320" height="137"
-            alt="Панорама дня, вид сверху на лес">
-          <div class="photos__wrapper">
-            <div class="photos__item photos__item--best">
-              <span class="photos__author-name">Анна</span>
-              <span class="photos__time">(5 минут назад)</span>
-              <blockquote class="photos__text">
-                Прыгать или нет? Напишите в
-                комментарии свой совет и
-                смотрите прямую трансляцию в
-                перископе, задавайте свои вопросы!
-              </blockquote>
-              <div class="photos__like-group">
-                <button class="photos__like-button">
-                  <span class="visually-hidden">Поставить лайк</span>
-                </button>
-                <span class="photos__like-counter">Нравится: 215</span>
-              </div>
-            </div>
+        <li class="photos__item photos__item--best">
+          <span class="photos__author-name">Анна <span class="photos__time">(5 минут назад)</span></span>
+          <blockquote class="photos__text">
+            Прыгать или нет? Напишите в
+            комментарии свой совет и
+            смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!
+          </blockquote>
+          <div class="photos__like-group">
+            <button class="photos__like-button">
+              <span class="visually-hidden">Поставить лайк</span>
+            </button>
+            <span class="photos__like-counter">Нравится: 215</span>
           </div>
         </li>
-        <li class="photos__group">
-          <div class="photos__item">
-            <img class="photos__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Камера на штативе">
-            <span class="photos__author-name">Левон</span>
-            <span class="photos__time">(5 часов назад)</span>
-            <blockquote class="photos__text">
-              Вчера он на луну летал, сегодня в руки к нам попал.
-            </blockquote>
-            <div class="photos__like-group">
-              <button class="photos__like-button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="photos__like-counter">Нравится: 356</span>
-            </div>
+        <li class="photos__item">
+          <img class="photos__image" src="img/photo-1-mobile.jpg" width="280" height="180" alt="Камера на штативе">
+          <span class="photos__author-name">Левон<span class="photos__time">(5 часов назад)</span></span>
+          <blockquote class="photos__text">
+            Вчера он на луну летал, сегодня в руки к нам попал.
+          </blockquote>
+          <div class="photos__like-group">
+            <button class="photos__like-button">
+              <span class="visually-hidden">Поставить лайк</span>
+            </button>
+            <span class="photos__like-counter">Нравится: 356</span>
           </div>
         </li>
-        <li class="photos__group">
-          <div class="photos__item">
-            <img class="photos__image" src="img/photo-2-mobile.jpg" width="280" height="180" alt="Барабанная установка">
-            <span class="photos__author-name">Антон</span>
-            <span class="photos__time">(12 часов назад)</span>
-            <blockquote class="photos__text">
-              Соседи будут рады!
-            </blockquote>
-            <div class="photos__like-group">
-              <button class="photos__like-button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="photos__like-counter">Нравится: 666</span>
-            </div>
+        <li class="photos__item">
+          <img class="photos__image" src="img/photo-2-mobile.jpg" width="280" height="180" alt="Барабанная установка">
+          <span class="photos__author-name">Антон<span class="photos__time">(12 часов назад)</span></span>
+          <blockquote class="photos__text">
+            Соседи будут рады!
+          </blockquote>
+          <div class="photos__like-group">
+            <button class="photos__like-button">
+              <span class="visually-hidden">Поставить лайк</span>
+            </button>
+            <span class="photos__like-counter">Нравится: 666</span>
           </div>
         </li>
-        <li class="photos__group">
-          <div class="photos__item">
-            <img class="photos__image" src="img/photo-3-mobile.jpg" width="280" height="180" alt="Дверь с решеткой">
-            <span class="photos__author-name">Борис</span>
-            <span class="photos__time">(20 часов назад)</span>
-            <blockquote class="photos__text">
-              Здесь могла быть ваша цитата о высоком и вечном.
-            </blockquote>
-            <div class="photos__like-group">
-              <button class="photos__like-button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="photos__like-counter">Нравится: 215</span>
-            </div>
+        <li class="photos__item">
+          <img class="photos__image" src="img/photo-3-mobile.jpg" width="280" height="180" alt="Дверь с решеткой">
+          <span class="photos__author-name">Борис<span class="photos__time">(20 часов назад)</span></span>
+          <blockquote class="photos__text">
+            Здесь могла быть ваша цитата о высоком и вечном.
+          </blockquote>
+          <div class="photos__like-group">
+            <button class="photos__like-button">
+              <span class="visually-hidden">Поставить лайк</span>
+            </button>
+            <span class="photos__like-counter">Нравится: 215</span>
           </div>
         </li>
-        <li class="photos__group">
-          <div class="photos__item">
-            <img class="photos__image" src="img/photo-4-mobile.jpg" width="280" height="180" alt="Ярмарка в шатре">
-            <span class="photos__author-name">Сергей</span>
-            <span class="photos__time">(25 часов назад)</span>
-            <blockquote class="photos__text">
-              Самая кубанская в мире!
-            </blockquote>
-            <div class="photos__like-group">
-              <button class="photos__like-button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="photos__like-counter">Нравится: 4</span>
-            </div>
+        <li class="photos__item">
+          <img class="photos__image" src="img/photo-4-mobile.jpg" width="280" height="180" alt="Ярмарка в шатре">
+          <span class="photos__author-name">Сергей<span class="photos__time">(25 часов назад)</span></span>
+          <blockquote class="photos__text">
+            Самая кубанская в мире!
+          </blockquote>
+          <div class="photos__like-group">
+            <button class="photos__like-button">
+              <span class="visually-hidden">Поставить лайк</span>
+            </button>
+            <span class="photos__like-counter">Нравится: 4</span>
           </div>
         </li>
-        <li class="photos__group">
-          <div class="photos__item">
-            <img class="photos__image" src="img/photo-5-mobile.jpg" width="280" height="180"
-              alt="Ноги, свешенные со скалы">
-            <span class="photos__author-name">Максим</span>
-            <span class="photos__time">(40 часов назад)</span>
-            <blockquote class="photos__text">
-              Где снег-то?
-            </blockquote>
-            <div class="photos__like-group">
-              <button class="photos__like-button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="photos__like-counter">Нравится: 150</span>
-            </div>
+        <li class="photos__item">
+          <img class="photos__image" src="img/photo-5-mobile.jpg" width="280" height="180"
+            alt="Вид на горную местноость с обрыва">
+          <span class="photos__author-name">Максим<span class="photos__time">(40 часов назад)</span></span>
+          <blockquote class="photos__text">
+            Где снег-то?
+          </blockquote>
+          <div class="photos__like-group">
+            <button class="photos__like-button">
+              <span class="visually-hidden">Поставить лайк</span>
+            </button>
+            <span class="photos__like-counter">Нравится: 150</span>
           </div>
         </li>
-        <li class="photos__group">
-          <div class="photos__item">
-            <img class="photos__image" src="img/photo-6-mobile.jpg" width="280" height="180"
-              alt="Вид на крыло самолёта и рассвет">
-            <span class="photos__author-name">Надежда</span>
-            <span class="photos__time">(45 часов назад)</span>
-            <blockquote class="photos__text">
-              Всем GM и взаимные лайки!
-            </blockquote>
-            <div class="photos__like-group">
-              <button class="photos__like-button">
-                <span class="visually-hidden">Поставить лайк</span>
-              </button>
-              <span class="photos__like-counter">Нравится: 2560</span>
-            </div>
+        <li class="photos__item">
+          <img class="photos__image" src="img/photo-6-mobile.jpg" width="280" height="180"
+            alt="Вид на крыло самолёта и рассвет">
+          <span class="photos__author-name">Надежда<span class="photos__time">(45 часов назад)</span></span>
+          <blockquote class="photos__text">
+            Всем GM и взаимные лайки!
+          </blockquote>
+          <div class="photos__like-group">
+            <button class="photos__like-button">
+              <span class="visually-hidden">Поставить лайк</span>
+            </button>
+            <span class="photos__like-counter">Нравится: 2560</span>
           </div>
         </li>
       </ul>
     </section>
     <section class="editor">
-
       <header class="editor__header">
         <h2 class="visually-hidden">Редактор фото</h2>
         <div class="editor__intro-wrapper">
@@ -203,7 +174,7 @@
           <img class="editor__image" src="img/editor-photo-mobile.jpg" width="280" height="374"
             alt="Зимняя просёлочная дорога">
           <div class="editor__settings">
-            <button class="editor__set editor__set--cut">
+            <button class="editor__set editor__set--crop">
               <span class="visually-hidden">Обрезка</span>
             </button>
             <button class="editor__set editor__set--fill">
@@ -218,8 +189,8 @@
               <input type="range" id="main" name="main">
               <label class="visually-hidden" for="main">Регулировка</label>
             </div>
-            <div class="editor__range-control editor__range-control--cut range-control">
-              <input type="range" id="cut" name="cut">
+            <div class="editor__range-control editor__range-control--crop range-control">
+              <input type="range" id="crop" name="crop">
               <label class="visually-hidden" for="cut">Регулировка обрезки</label>
             </div>
             <div class="editor__range-control editor__range-control--fill range-control">
@@ -300,11 +271,12 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
+        <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg viewBox="0 0 60 60" width="27" height="34">
-            <path fill="#2E368F"
-              d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="none">
+            <path
+              d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+              fill="#D22856" />
           </svg>
         </a>
       </div>

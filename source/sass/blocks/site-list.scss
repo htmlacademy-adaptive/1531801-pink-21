@@ -10,8 +10,8 @@
 .site-list__item {
   background-color: $blue-700;
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 14px;
   color: $white;
   font-size: 18px;
   line-height: 32px;
@@ -21,13 +21,14 @@
   border-bottom: 1px solid $black;
 
   @media (min-width: $breakpoint-large) {
+    background-color: transparent;
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
     text-transform: none;
     border: none;
-    padding-left: 80px;
-    padding-top: 50px;
+    padding-left: 79px;
+    padding-top: 44px;
     padding-bottom: 50px;
   }
 

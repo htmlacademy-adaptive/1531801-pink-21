@@ -1,33 +1,20 @@
 .photos__list {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   list-style: none;
+
+  @include wrapper;
 
   @media (min-width: $breakpoint-medium) {
     display: grid;
     gap: 20px;
-    grid-template-areas: "best best";
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $breakpoint-large) {
-    grid-template-areas: "best best best";
+    grid-template-columns: 1fr 1fr 1fr;
     row-gap: 55px;
     column-gap: 20px;
-  }
-}
-
-.photos__list li:first-child {
-  grid-area: best;
-}
-
-.photos__group {
-  @media (max-width: $breakpoint-small-only) {
-    @include wrapper;
-  }
-
-  @media (min-width: $breakpoint-medium) {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
@@ -37,11 +24,6 @@
   @media (min-width: $breakpoint-medium) {
     font-size: 18px;
   }
-}
-
-.photos__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .photos__intro-wrapper {
@@ -56,35 +38,48 @@
 .photos__item {
   margin-bottom: 20px;
   background-color: $grey-200;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  grid-template-areas: "image image" "author-name time" "text text" "like-group like-group";
+  &--best {
+    grid-column: 1 / -1;
+    margin-top: -7px;
+  }
 
   @media (min-width: $breakpoint-medium) {
+    margin-bottom: 30px;
     min-height: 455px;
+    width: 300px;
+
+    &--best {
+      width: 620px;
+      min-height: 121px;
+      flex-direction: row;
+
+      .photos__like-group {
+        margin-left: auto;
+        padding-bottom: 0;
+      }
+
+      .photos__text {
+        order: 1;
+      }
+    }
   }
 
   @media (min-width: $breakpoint-large) {
     min-height: 555px;
-  }
+    margin-bottom: -5px;
 
-  &--best {
-    margin-top: -7px;
-    min-height: 0;
-    grid-template-columns: min-content 1fr 3fr 1fr;
-    grid-template-areas: "author-name time . like-group" "text text text text";
+    &--best {
+      width: 940px;
+      min-height: 96px;
+    }
   }
 }
 
 .photos__image {
-  grid-area: image;
-  justify-self: center;
-
-  &--best {
-    width: 100%;
-  }
-
   @media (min-width: $breakpoint-medium) {
     width: 300px;
     height: 300px;
@@ -94,59 +89,74 @@
     width: 300px;
     height: 400px;
   }
+
+  &--best {
+    width: 100%;
+  }
 }
 
 .photos__author-name {
-  grid-area: author-name;
   font-weight: 700;
-  margin: 0 0 0 17px;
-  padding-right: 10px;
-  padding-top: 15px;
+  padding-left: 17px;
   color: $blue-700;
-  align-self: center;
+  padding-top: 25px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
 }
 
 .photos__time {
-  grid-area: time;
   font-weight: 300;
-  padding-top: 15px;
   text-transform: uppercase;
   color: $blue-700;
-  align-self: center;
+  padding-left: 3px;
 }
 
 .photos__text {
-  grid-area: text;
   color: $blue-700;
-  margin: 0 0 0 17px;
+  margin: 0;
+  padding-left: 17px;
+  padding-top: 15px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-left: 30px;
+  }
 }
 
 .photos__like-group {
-  grid-area: like-group;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 25px;
   align-content: flex-start;
+  padding-top: 25px;
   padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: auto;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .photos__like-button {
   position: relative;
-  margin-left: 20px;
+  padding: 0;
   width: 20px;
   height: 20px;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  background-image: url("../../img/heart.svg");
+  background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
-  background-position: 0 80%;
+  background-position: 3px 6px;
 
   @media (min-width: $breakpoint-medium) {
     order: 1;
     margin-left: auto;
-    padding-left: 20px;
   }
 }
 
@@ -155,5 +165,10 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
-  padding-left: 20px;
+  padding-left: 15px;
+  padding-right: 10px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-left: 0;
+  }
 }

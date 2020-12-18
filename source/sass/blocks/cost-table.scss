@@ -1,6 +1,9 @@
 .cost-table {
-  border: 2px solid $grey-100;
   border-collapse: collapse;
+
+  tbody {
+    background-color: $white;
+  }
 
   p {
     margin: 0;
@@ -9,37 +12,112 @@
 
 .cost-table__header {
   text-transform: uppercase;
-  background-color: $blue-700;
   color: $white;
 }
 
 .cost-table__header-item {
+  background-color: $blue-700;
   min-width: 280px;
-  padding: 15px;
+  height: 99px;
+  border: 2px solid $grey-100;
+  position: relative;
+
+  &--hit::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/hit.svg");
+    background-repeat: no-repeat;
+    width: 74px;
+    height: 74px;
+    top: 0;
+    left: 0;
+
+    @media (min-width: $breakpoint-medium) {
+      background-image: url("../img/hit-medium.svg");
+    }
+
+    @media (min-width: $breakpoint-large) {
+      background-image: url("../img/hit.svg");
+    }
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    min-width: 156px;
+    height: 81px;
+    padding-left: 5px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    min-width: 233px;
+    height: 100px;
+  }
+}
+
+.cost-table__title {
+  font-size: 16px;
+  line-height: 10px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 20px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 0;
+  }
 }
 
 .cost-table__usd-price {
+  font-size: 18px;
+  line-height: 45px;
   font-weight: 300;
+
+  @media (min-width: $breakpoint-large) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .cost-table__availability-cell {
   border: 2px solid $grey-100;
-  padding: 15px;
+  height: 61px;
+  position: relative;
+  background-color: $white;
+
+  @media (min-width: $breakpoint-medium) {
+    height: 45px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    height: 59px;
+  }
 }
 
 .cost-table__feature-name {
   display: none;
   text-align: left;
   font-weight: normal;
-  border-bottom: 2px solid $grey-100;
-  padding: 15px;
+  background-color: $white;
+  min-width: 153px;
+  padding-left: 17px;
+  padding-top: 11px;
 
   @media (min-width: $breakpoint-medium) {
     display: block;
+    padding-top: 9px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-top: 15px;
+    min-width: 233px;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   &--inside {
     text-transform: uppercase;
+    padding-left: 20px;
 
     @media (min-width: $breakpoint-medium) {
       display: none;
@@ -52,5 +130,59 @@
     @media (min-width: $breakpoint-medium) {
       display: block;
     }
+  }
+}
+
+.cost-table__feature-border {
+  border: 2px solid $grey-100;
+}
+
+.cost-table__availability-cell--yes::before {
+  position: absolute;
+  content: "";
+
+  top: calc(50% - 13px);
+  right: 18px;
+  width: 30px;
+  height: 15px;
+  border: solid $green-700;
+  border-width: 0 0 3px 3px;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+
+  @media (min-width: $breakpoint-medium) {
+    right: calc(50% - 16px);
+  }
+}
+
+.cost-table__availability-cell--no::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 3px);
+  right: 15px;
+  width: 37px;
+  height: 3px;
+  background: $red;
+  border-radius: 2px;
+  transform: rotate(45deg);
+
+  @media (min-width: $breakpoint-medium) {
+    right: calc(50% - 19px);
+  }
+}
+
+.cost-table__availability-cell--no::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 3px);
+  right: 15px;
+  width: 37px;
+  height: 3px;
+  background: $red;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+
+  @media (min-width: $breakpoint-medium) {
+    right: calc(50% - 19px);
   }
 }
