@@ -117,6 +117,7 @@
 .editor__range-control {
   border-bottom: 1px solid rgba($blue-700, 0.1);
   position: relative;
+  display: none;
 
   @media (min-width: $breakpoint-medium) {
     padding-top: 12px;
@@ -140,21 +141,13 @@
     padding-top: 30px;
   }
 
-  &--main {
+  &--active {
     @media (max-width: $breakpoint-small-only) {
       display: block;
-    }
-
-    @media (min-width: $breakpoint-medium) {
-      display: none;
     }
   }
 
   &--crop {
-    @media (max-width: $breakpoint-small-only) {
-      display: none;
-    }
-
     @media (min-width: $breakpoint-medium) {
       display: block;
 
@@ -165,10 +158,6 @@
   }
 
   &--fill {
-    @media (max-width: $breakpoint-small-only) {
-      display: none;
-    }
-
     @media (min-width: $breakpoint-medium) {
       display: block;
 
@@ -179,10 +168,6 @@
   }
 
   &--contrast {
-    @media (max-width: $breakpoint-small-only) {
-      display: none;
-    }
-
     @media (min-width: $breakpoint-medium) {
       display: block;
 

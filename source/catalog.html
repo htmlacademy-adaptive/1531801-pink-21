@@ -60,11 +60,11 @@
           <p class="photos__intro">Видите, как не хватает ваших?</p>
         </div>
       </header>
-      <h3 class="visually-hidden">Панорама дня</h3>
-      <img class="photos__image photos__image--best" src="img/panorama-mobile.jpg" width="320" height="137"
-        alt="Панорама дня, вид сверху на лес">
       <ul class="photos__list">
         <li class="photos__item photos__item--best">
+          <h3 class="visually-hidden">Панорама дня</h3>
+          <img class="photos__image photos__image--best" src="img/panorama-mobile.jpg" width="320" height="137"
+            alt="Панорама дня, вид сверху на лес">
           <span class="photos__author-name">Анна <span class="photos__time">(5 минут назад)</span></span>
           <blockquote class="photos__text">
             Прыгать или нет? Напишите в
@@ -185,11 +185,7 @@
             </button>
           </div>
           <div class="editor__range-group">
-            <div class="editor__range-control editor__range-control--main range-control">
-              <input type="range" id="main" name="main">
-              <label class="visually-hidden" for="main">Регулировка</label>
-            </div>
-            <div class="editor__range-control editor__range-control--crop range-control">
+            <div class="editor__range-control editor__range-control--crop editor__range-control--active range-control">
               <input type="range" id="crop" name="crop">
               <label class="visually-hidden" for="cut">Регулировка обрезки</label>
             </div>

@@ -1,9 +1,10 @@
 .download {
   background-color: $blue-700;
-  background-image: url("../../img/bg-small.jpg");
+  background-image: url("../img/bg-small.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 50% 53%;
   padding-bottom: 18px;
+  padding-top: 324px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-small@2x.jpg");
@@ -11,8 +12,9 @@
   }
 
   @media (min-width: $breakpoint-medium) {
-    background-image: url("../../img/bg-medium.jpg");
+    background-image: url("../img/bg-medium.jpg");
     padding-bottom: 39px;
+    padding-top: 365px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-medium@2x.jpg");
@@ -21,7 +23,7 @@
   }
 
   @media (min-width: $breakpoint-large) {
-    background-image: url("../../img/bg-large.jpg");
+    background-image: url("../img/bg-large.jpg");
     padding-bottom: 107px;
 
     @media (min-resolution: 2dppx) {
@@ -44,7 +46,7 @@
 
 .download__image {
   margin-left: -20px;
-  max-width: 200%;
+  max-width: none;
 
   @media (min-width: $breakpoint-medium) {
     position: absolute;
@@ -96,7 +98,7 @@
 
 .download__list {
   padding-top: 22px;
-  padding-bottom: 38px;
+  padding-bottom: 3px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -137,7 +139,6 @@
   color: $white;
   text-align: center;
   font-weight: 300;
-  padding-top: 17px;
 
   @media (min-width: $breakpoint-medium) {
     font-size: 18px;
@@ -155,66 +156,27 @@
 .download__link-group {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top: 40px;
+  justify-content: space-evenly;
+  padding-top: 32px;
 }
 
 .download__link {
-  position: relative;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
 
-  &::before {
-    position: absolute;
-    content: "";
-    background-repeat: no-repeat;
-    width: 47px;
-    height: 56px;
+  &--apple {
+    background-image: url("../img/apple-logo.svg");
+    background-position: right 1px;
   }
 
-  &--apple::before {
-    background-image: url("../../img/apple-logo.svg");
-    top: -8px;
-    left: -9px;
-
-    @media (min-width: $breakpoint-medium) {
-      top: 6px;
-      left: -6px;
-    }
-
-    @media (min-width: $breakpoint-large) {
-      top: 25px;
-      left: -4px;
-    }
+  &--android {
+    background-image: url("../img/android-logo.svg");
+    background-position: 10px 7px;
   }
 
-  &--android::before {
-    background-image: url("../../img/android-logo.svg");
-    top: -2px;
-    left: -20px;
-
-    @media (min-width: $breakpoint-medium) {
-      top: 11px;
-      left: -27px;
-    }
-
-    @media (min-width: $breakpoint-large) {
-      top: 33px;
-      left: -21px;
-    }
-  }
-
-  &--windows::before {
-    background-image: url("../../img/microsoft-logo.svg");
-    top: 4px;
-    left: -35px;
-
-    @media (min-width: $breakpoint-medium) {
-      top: 14px;
-      left: -52px;
-    }
-
-    @media (min-width: $breakpoint-large) {
-      top: 37px;
-      left: -42px;
-    }
+  &--windows {
+    background-image: url("../img/microsoft-logo.svg");
+    background-position: 3px 13px;
   }
 }

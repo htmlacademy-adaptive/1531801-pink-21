@@ -1,9 +1,13 @@
+.photos {
+  display: grid;
+
+  @include wrapper;
+}
+
 .photos__list {
   margin: 0;
   padding: 0;
   list-style: none;
-
-  @include wrapper;
 
   @media (min-width: $breakpoint-medium) {
     display: grid;

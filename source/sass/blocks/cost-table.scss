@@ -16,10 +16,10 @@
 }
 
 .cost-table__header-item {
-  background-color: $blue-700;
   min-width: 280px;
   height: 99px;
   border: 2px solid $grey-100;
+  border-top-left-radius: 1px;
   position: relative;
 
   &--hit::after {
@@ -83,7 +83,6 @@
   border: 2px solid $grey-100;
   height: 61px;
   position: relative;
-  background-color: $white;
 
   @media (min-width: $breakpoint-medium) {
     height: 45px;
@@ -155,34 +154,28 @@
   }
 }
 
-.cost-table__availability-cell--no::before {
-  content: "";
-  position: absolute;
-  top: calc(50% - 3px);
-  right: 15px;
-  width: 37px;
-  height: 3px;
-  background: $red;
-  border-radius: 2px;
-  transform: rotate(45deg);
+.cost-table__availability-cell--no {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 3px);
+    right: 15px;
+    width: 37px;
+    height: 3px;
+    background: $red;
+    border-radius: 2px;
 
-  @media (min-width: $breakpoint-medium) {
-    right: calc(50% - 19px);
+    @media (min-width: $breakpoint-medium) {
+      right: calc(50% - 19px);
+    }
   }
-}
 
-.cost-table__availability-cell--no::after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 3px);
-  right: 15px;
-  width: 37px;
-  height: 3px;
-  background: $red;
-  border-radius: 2px;
-  transform: rotate(-45deg);
+  &::before {
+    transform: rotate(45deg);
+  }
 
-  @media (min-width: $breakpoint-medium) {
-    right: calc(50% - 19px);
+  &::after {
+    transform: rotate(-45deg);
   }
 }
