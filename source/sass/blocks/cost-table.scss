@@ -21,6 +21,7 @@
   border: 2px solid $grey-100;
   border-top-left-radius: 1px;
   position: relative;
+  background-color: $blue-700;
 
   &--hit::after {
     position: absolute;

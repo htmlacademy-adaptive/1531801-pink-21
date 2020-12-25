@@ -2,9 +2,8 @@
   background-color: $blue-700;
   background-image: url("../img/bg-small.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 53%;
-  padding-bottom: 18px;
-  padding-top: 324px;
+  background-position: 50% -24%;
+  padding-bottom: 14px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-small@2x.jpg");
@@ -13,8 +12,9 @@
 
   @media (min-width: $breakpoint-medium) {
     background-image: url("../img/bg-medium.jpg");
-    padding-bottom: 39px;
-    padding-top: 365px;
+    padding-bottom: 96px;
+    padding-top: 71px;
+    background-position: 50% 100%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-medium@2x.jpg");
@@ -24,7 +24,7 @@
 
   @media (min-width: $breakpoint-large) {
     background-image: url("../img/bg-large.jpg");
-    padding-bottom: 107px;
+    padding-bottom: 108px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-large@2x.jpg");
@@ -34,33 +34,37 @@
 }
 
 .download__wrapper {
+  @media (min-width: $breakpoint-medium) {
+    @include wrapper;
+  }
+}
+
+.download__inner-wrapper {
   @include wrapper;
-  min-height: 630px;
   position: relative;
   z-index: 1;
-
-  @media (min-width: $breakpoint-medium) {
-    min-height: 581px;
-  }
 }
 
 .download__image {
   margin-left: -20px;
   max-width: none;
+  display: block;
 
   @media (min-width: $breakpoint-medium) {
     position: absolute;
     width: 660px;
     height: 545px;
-    top: 73px;
+    top: 3px;
+    left: 0;
     z-index: -1;
   }
 
   @media (min-width: $breakpoint-large) {
-    width: 746px;
+    width: 1050px;
     height: 645px;
-    left: 198px;
-    top: 206px;
+    left: 16px;
+    top: 138px;
+    margin-left: 0;
   }
 }
 
@@ -78,33 +82,40 @@
     font-size: 40px;
     line-height: 48px;
     width: 50%;
-    padding-top: 94px;
-    padding-left: 29px;
-    padding-right: 40px;
+    padding-right: 50px;
     padding-bottom: 9px;
-    position: relative;
-    z-index: 1;
   }
 
   @media (min-width: $breakpoint-large) {
     font-size: 50px;
     line-height: 68px;
     width: 30%;
-    padding-right: 12px;
+    padding-right: 4px;
     padding-bottom: 18px;
-    padding-top: 206px;
+    padding-top: 138px;
   }
 }
 
 .download__list {
-  padding-top: 22px;
-  padding-bottom: 3px;
+  position: relative;
+  z-index: 1;
+  background-color: $blue-700;
+
+  @media (min-width: $breakpoint-medium) {
+    background-color: transparent;
+  }
+}
+
+.download__list-wrapper {
+  padding-top: 29px;
+  padding-bottom: 2px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
   @media (min-width: $breakpoint-medium) {
     width: 50%;
+    padding-top: 20px;
   }
 
   @media (min-width: $breakpoint-large) {
@@ -135,20 +146,28 @@
   }
 }
 
+.download__button-wrapper {
+  @media (max-width: $breakpoint-small-only) {
+    @include wrapper;
+  }
+}
+
 .download__info {
   color: $white;
   text-align: center;
   font-weight: 300;
+  padding-top: 3px;
 
   @media (min-width: $breakpoint-medium) {
     font-size: 18px;
     width: 50%;
-    padding-top: 37px;
+    padding-top: 10px;
+    padding-right: 10px;
   }
 
   @media (min-width: $breakpoint-large) {
     width: 33%;
-    padding-top: 77px;
+    padding-top: 27px;
     padding-right: 10px;
   }
 }
@@ -156,27 +175,37 @@
 .download__link-group {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   padding-top: 32px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 45px;
+    padding-right: 14px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-top: 68px;
+    padding-right: 0;
+  }
 }
 
 .download__link {
   width: 60px;
   height: 60px;
+  margin-right: 10px;
+  margin-left: 10px;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 
   &--apple {
     background-image: url("../img/apple-logo.svg");
-    background-position: right 1px;
   }
 
   &--android {
     background-image: url("../img/android-logo.svg");
-    background-position: 10px 7px;
   }
 
   &--windows {
     background-image: url("../img/microsoft-logo.svg");
-    background-position: 3px 13px;
   }
 }
