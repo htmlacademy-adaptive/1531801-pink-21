@@ -12,7 +12,7 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
-        <svg width="74" height="23" viewBox="0 0 74 23" fill="none">
+        <svg class="page-header__logo-image-small" width="74" height="23" viewBox="0 0 74 23" fill="none">
           <path
             d="M0.00496827 1.54857C0.00487772 1.21254 0.135804 0.889818 0.369742 0.649431C0.60368 0.409043 0.922049 0.27008 1.25676 0.262266H8.39001C13.4469 0.262266 16.7751 2.9645 16.7751 7.39179V7.45162C16.7751 12.2977 12.7415 14.8105 7.97274 14.8105H2.53836V21.611C2.55394 21.7874 2.53277 21.9651 2.47619 22.1329C2.41961 22.3006 2.32887 22.4547 2.20973 22.5854C2.09058 22.716 1.94565 22.8204 1.78416 22.8918C1.62266 22.9631 1.44812 23 1.27166 23C1.0952 23 0.920671 22.9631 0.759173 22.8918C0.597674 22.8204 0.452744 22.716 0.333602 22.5854C0.21446 22.4547 0.123708 22.3006 0.0671295 22.1329C0.0105515 21.9651 -0.0106138 21.7874 0.00496827 21.611V1.54857ZM8.07209 12.5171C11.7778 12.5171 14.2119 10.5228 14.2119 7.53139V7.47156C14.2119 4.26078 11.8175 2.59556 8.25092 2.59556H2.58804V12.4772L8.07209 12.5171Z"
             fill="white" />
@@ -30,9 +30,6 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <svg width="50" height="24" viewBox="0 0 50 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.13659 0.00020839C0.986512 -0.00251551 0.837358 0.0214885 0.698091 0.0707781C0.558823 0.120068 0.432317 0.193625 0.326173 0.28703C0.22003 0.380436 0.136442 0.49176 0.0804303 0.614315C0.024419 0.73687 -0.00285856 0.868124 0.000236809 1.00019V3.00016C0.000236809 3.26537 0.119959 3.51972 0.333067 3.70725C0.546174 3.89478 0.83521 4.00014 1.13659 4.00014H48.8634C49.0135 4.00286 49.1626 3.97886 49.3019 3.92957C49.4412 3.88028 49.5677 3.80672 49.6738 3.71332C49.78 3.61991 49.8636 3.50859 49.9196 3.38603C49.9756 3.26348 50.0029 3.13222 49.9998 3.00016V1.00019C49.9998 0.734979 49.88 0.48063 49.6669 0.293097C49.4538 0.105563 49.1648 0.00020839 48.8634 0.00020839H1.13659ZM1.13659 10C0.986512 9.99731 0.837358 10.0213 0.698091 10.0706C0.558823 10.1199 0.432317 10.1935 0.326173 10.2869C0.22003 10.3803 0.136442 10.4916 0.0804303 10.6141C0.024419 10.7367 -0.00285856 10.868 0.000236809 11V13C0.000236809 13.2652 0.119959 13.5195 0.333067 13.7071C0.546174 13.8946 0.83521 14 1.13659 14H48.8634C49.0135 14.0027 49.1626 13.9787 49.3019 13.9294C49.4412 13.8801 49.5677 13.8065 49.6738 13.7131C49.78 13.6197 49.8636 13.5084 49.9196 13.3859C49.9756 13.2633 50.0029 13.132 49.9998 13V11C49.9998 10.7348 49.88 10.4805 49.6669 10.2929C49.4538 10.1054 49.1648 10 48.8634 10H1.13659ZM1.13659 19.9999C0.986512 19.9971 0.837358 20.0211 0.698091 20.0704C0.558823 20.1197 0.432317 20.1933 0.326173 20.2867C0.22003 20.3801 0.136442 20.4914 0.0804303 20.614C0.024419 20.7365 -0.00285856 20.8678 0.000236809 20.9998V22.9998C0.000236809 23.265 0.119959 23.5194 0.333067 23.7069C0.546174 23.8944 0.83521 23.9998 1.13659 23.9998H48.8634C49.0135 24.0025 49.1626 23.9785 49.3019 23.9292C49.4412 23.8799 49.5677 23.8064 49.6738 23.713C49.78 23.6196 49.8636 23.5082 49.9196 23.3857C49.9756 23.2631 50.0029 23.1319 49.9998 22.9998V20.9998C49.9998 20.7346 49.88 20.4803 49.6669 20.2927C49.4538 20.1052 49.1648 19.9999 48.8634 19.9999H1.13659Z" fill="white"/>
-            </svg>
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
@@ -55,25 +52,35 @@
     <h1 class="visually-hidden">Приложение Пинк</h1>
     <section class="download">
       <div class="download__wrapper">
-        <h2 class="visually-hidden">Загрузка приложения</h2>
-        <p class="download__slogan">Взгляните на жизнь иначе!</p>
-        <img class="download__image" src="img/pink-filter.png" width="320" height="286"
-          alt="Фото с розовым фильтром Пинк">
-        <div class="download__list">
-          <a class="download__button button" href="https://www.apple.com/iphone/appstore/">Скачать приложение</a>
-          <div class="download__link-group">
-            <a class="download__link download__link--apple" href="https://www.apple.com/iphone/appstore/">
-              <span class="visually-hidden">для Apple</span>
-            </a>
-            <a class="download__link download__link--android" href="https://play.google.com/store/apps">
-              <span class="visually-hidden">для Андроид</span>
-            </a>
-            <a class="download__link download__link--windows" href="https://www.microsoft.com/ru-ru/store/apps">
-              <span class="visually-hidden">для Windows</span>
-            </a>
-          </div>
+        <div class="download__inner-wrapper">
+          <h2 class="visually-hidden">Загрузка приложения</h2>
+          <p class="download__slogan">Взгляните на&nbsp;жизнь иначе!</p>
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/main-intro-large.png 1x, img/main-intro-large@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/main-intro-medium.png 1x, img/main-intro-medium@2x.png 2x">
+            <img class="download__image" src="img/main-intro-small.png" srcset="img/main-intro-small@2x.png 2x"
+              width="320" height="286" alt="Фото с розовым фильтром Пинк">
+          </picture>
         </div>
-        <p class="download__info">Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X, Windows 8</p>
+        <div class="download__list">
+          <div class="download__list-wrapper">
+            <div class="download__button-wrapper">
+              <a class="download__button button" href="https://www.apple.com/iphone/appstore/">Скачать приложение</a>
+            </div>
+            <div class="download__link-group">
+              <a class="download__link download__link--apple" href="https://www.apple.com/iphone/appstore/">
+                <span class="visually-hidden">для Apple</span>
+              </a>
+              <a class="download__link download__link--android" href="https://play.google.com/store/apps">
+                <span class="visually-hidden">для Андроид</span>
+              </a>
+              <a class="download__link download__link--windows" href="https://www.microsoft.com/ru-ru/store/apps">
+                <span class="visually-hidden">для Windows</span>
+              </a>
+            </div>
+          </div>
+          <p class="download__info">Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X, Windows 8</p>
+        </div>
       </div>
     </section>
     <section class="features">
@@ -82,24 +89,24 @@
           <h2 class="visually-hidden">Преимущества</h2>
           <div class="features__intro">
             <p>Устали от серости мегаполиса?</p>
-            <p>Нам есть, что вам предложить!</p>
+            <p>Нам есть, что вам <br> предложить!</p>
           </div>
         </header>
         <ul class="features__list">
           <li class="features__item">
             <h3 class="features__title">Поднимает настроение</h3>
-            <p class="features__description">Приложение позволит вам победить <br> осеннюю хандру и депрессию <br>
+            <p class="features__description">Приложение позволит вам победить осеннюю хандру и&nbsp;депрессию
               буквально в несколько кликов!</p>
           </li>
           <li class="features__item">
             <h3 class="features__title">Меняет мир вокруг</h3>
-            <p class="features__description">Сделайте снимок и украсьте его <br> смайликом или текстовой
-              подписью, <br> чтобы усилить эффект</p>
+            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой
+              подписью, чтобы усилить&nbsp;эффект</p>
           </li>
           <li class="features__item">
-            <h3 class="features__title">Заводит новых друзей</h3>
-            <p class="features__description">Ставьте лайки, комментируйте,<br> делитесь фотографиями с друзьями
-              и <br> заводите новых</p>
+            <h3 class="features__title">Заводит новых&nbsp;друзей</h3>
+            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями
+              и заводите новых</p>
           </li>
         </ul>
       </div>
@@ -107,10 +114,9 @@
     <section class="research">
       <div class="research__wrapper">
         <h2 class="visually-hidden">Исследования ученых</h2>
-        <p class="research__title">Эффект <br> на 24 часа!</p>
-        <p class="research__info">Британские ученые провели исследования <br> и доказали, что положительный эффект <br>
-          от
-          использования приложения длится <br> целые сутки!</p>
+        <p class="research__title">Эффект на&nbsp;24 часа!</p>
+        <p class="research__info">Британские ученые провели исследования и&nbsp;доказали, что&nbsp;положительный эффект
+          от&nbsp;использования приложения длится целые сутки!</p>
         <a class="research__link" href="">Узнать больше об исследовании</a>
       </div>
     </section>
@@ -121,34 +127,34 @@
           <div class="reviews__item slider__item slider__item--active">
             <span class="reviews__author-name">Николай Петров</span>
             <p class="reviews__author-info">25 лет, водитель трамвая</p>
-            <q class="reviews__text">
-              Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
-              вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-              фотографии!
-            </q>
+            <p class="reviews__text">
+              &laquo;Это приложение перевернуло мой&nbsp;мир и позволило по-новому взглянуть на привычные серые
+              вещи! А еще я познакомился со своей будущей женой в комментариях к&nbsp;выложенной
+              фотографии!&raquo;
+            </p>
           </div>
           <div class="reviews__item slider__item">
             <span class="reviews__author-name">Иван Сидоров</span>
             <p class="reviews__author-info">36 лет, дизайнер</p>
-            <q class="reviews__text">
-              Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+            <p class="reviews__text">
+              &laquo;Это приложение перевернуло мой&nbsp;мир и позволило по-новому взглянуть на привычные серые
               вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-              фотографии!
-            </q>
+              фотографии!&raquo;
+            </p>
           </div>
           <div class="reviews__item slider__item">
             <span class="reviews__author-name">Сергей Серов</span>
             <p class="reviews__author-info">18 лет, студент</p>
-            <q class="reviews__text">
-              Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+            <p class="reviews__text">
+              &laquo;Это приложение перевернуло мой&nbsp;мир и позволило по-новому взглянуть на привычные серые
               вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
-              фотографии!
-            </q>
+              фотографии!&raquo;
+            </p>
           </div>
-          <button class="reviews__button" type="button">
+          <button class="reviews__button reviews__button--previous" type="button">
             <span class="visually-hidden">Предыдущий отзыв</span>
           </button>
-          <button class="reviews__button" type="button">
+          <button class="reviews__button reviews__button--next" type="button">
             <span class="visually-hidden">Следующий отзыв</span>
           </button>
         </div>
@@ -177,7 +183,7 @@
                 <p class="cost-table__title">База</p>
                 <p class="cost-table__usd-price">1,99 USD</p>
               </th>
-              <th class="cost-table__header-item" scope="col">
+              <th class="cost-table__header-item cost-table__header-item--hit" scope="col">
                 <p class="cost-table__title">Стандарт</p>
                 <p class="cost-table__usd-price">3,99 USD</p>
               </th>
@@ -188,55 +194,56 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="cost-table__feature-border">
               <th class="cost-table__feature-name" scope="row">
                 Розовый фильтр
               </th>
-              <td class="cost-table__availability-cell">
+              <td class="cost-table__availability-cell cost-table__availability-cell--yes">
                 <span class="cost-table__feature-name--inside">Розовый фильтр</span>
                 <span class="visually-hidden">Есть</span>
               </td>
-              <td class="cost-table__availability-cell">
+              <td class="cost-table__availability-cell cost-table__availability-cell--yes">
                 <span class="cost-table__feature-name--inside">Розовый фильтр</span>
                 <span class="visually-hidden">Есть</span>
               </td>
-              <td class="cost-table__availability-cell">
+              <td class="cost-table__availability-cell cost-table__availability-cell--yes">
                 <span class="cost-table__feature-name--inside">Розовый фильтр</span>
                 <span class="visually-hidden">Есть</span>
               </td>
             </tr>
-            <tr>
+            <tr class="cost-table__feature-border">
               <th class="cost-table__feature-name" scope="row">
                 Смайлики
               </th>
-              <td class="cost-table__availability-cell">
+              <td class="cost-table__availability-cell cost-table__availability-cell--no">
                 <span class="cost-table__feature-name--inside">Смайлики</span>
                 <span class="visually-hidden">Отсутствует</span>
               </td>
-              <td class="cost-table__availability-cell">
+              <td class="cost-table__availability-cell cost-table__availability-cell--yes">
                 <span class="cost-table__feature-name--inside">Смайлики</span>
                 <span class="visually-hidden">Есть</span>
               </td>
-              <td class="cost-table__availability-cell">
+              <td class="cost-table__availability-cell cost-table__availability-cell--yes">
                 <span class="cost-table__feature-name--inside">Смайлики</span>
                 <span class="visually-hidden">Есть</span>
               </td>
             </tr>
-            <th class="cost-table__feature-name" scope="row">
-              Комментарии
-            </th>
-            <td class="cost-table__availability-cell">
-              <span class="cost-table__feature-name--inside">Комментарии</span>
-              <span class="visually-hidden">Отсутствует</span>
-            </td>
-            <td class="cost-table__availability-cell">
-              <span class="cost-table__feature-name--inside">Комментарии</span>
-              <span class="visually-hidden">Отсутствует</span>
-            </td>
-            <td class="cost-table__availability-cell">
-              <span class="cost-table__feature-name--inside">Комментарии</span>
-              <span class="visually-hidden">Есть</span>
-            </td>
+            <tr class="cost-table__feature-border">
+              <th class="cost-table__feature-name" scope="row">
+                Комментарии
+              </th>
+              <td class="cost-table__availability-cell cost-table__availability-cell--no">
+                <span class="cost-table__feature-name--inside">Комментарии</span>
+                <span class="visually-hidden">Отсутствует</span>
+              </td>
+              <td class="cost-table__availability-cell cost-table__availability-cell--no">
+                <span class="cost-table__feature-name--inside">Комментарии</span>
+                <span class="visually-hidden">Отсутствует</span>
+              </td>
+              <td class="cost-table__availability-cell cost-table__availability-cell--yes">
+                <span class="cost-table__feature-name--inside">Комментарии</span>
+                <span class="visually-hidden">Есть</span>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -291,7 +298,7 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
         <a href="">
-          <svg width="145" height="40" viewBox="0 0 145 40" fill="none">
+          <svg сlass="page-footer__logo-image-small" width="145" height="40" viewBox="0 0 145 40" fill="none">
             <path
               d="M71.005 18.5486C71.0049 18.2125 71.1358 17.8898 71.3697 17.6494C71.6037 17.409 71.922 17.2701 72.2568 17.2623H79.39C84.4469 17.2623 87.7751 19.9645 87.7751 24.3918V24.4516C87.7751 29.2977 83.7415 31.8105 78.9727 31.8105H73.5384V38.611C73.5539 38.7874 73.5328 38.9651 73.4762 39.1329C73.4196 39.3006 73.3289 39.4547 73.2097 39.5854C73.0906 39.716 72.9457 39.8204 72.7842 39.8918C72.6227 39.9631 72.4481 40 72.2717 40C72.0952 40 71.9207 39.9631 71.7592 39.8918C71.5977 39.8204 71.4527 39.716 71.3336 39.5854C71.2145 39.4547 71.1237 39.3006 71.0671 39.1329C71.0106 38.9651 70.9894 38.7874 71.005 38.611V18.5486ZM79.0721 29.5171C82.7778 29.5171 85.2119 27.5228 85.2119 24.5314V24.4716C85.2119 21.2608 82.8175 19.5956 79.2509 19.5956H73.588V29.4772L79.0721 29.5171Z"
               fill="#283645" />
@@ -349,11 +356,12 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано:</p>
+        <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg viewBox="0 0 60 60" width="27" height="34">
-            <path fill="#2E368F"
-              d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+          <svg width="27" height="34" viewBox="0 0 27 34" fill="none">
+            <path
+              d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+              fill="#D22856" />
           </svg>
         </a>
       </div>

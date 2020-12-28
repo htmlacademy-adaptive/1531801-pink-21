@@ -1,3 +1,9 @@
+.page-main {
+
+  min-width: 0;
+}
+
+
 .page-main__title {
   @include wrapper;
   text-align: center;
@@ -14,18 +20,33 @@
 }
 
 .page-main__intro {
-  background-image: url("../../img/bg-small.jpg");
+  background-image: url("../img/bg-small.jpg");
   background-position: top;
   height: 235px;
   padding-top: 100px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-small@2x.jpg");
+    background-size: 810px auto;
+  }
+
   @media (min-width: $breakpoint-medium) {
-    background-image: url("../../img/bg-medium.jpg");
+    background-image: url("../img/bg-medium.jpg");
     height: 440px;
     padding-top: 200px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-medium@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   @media (min-width: $breakpoint-large) {
-    background-image: url("../../img/bg-large.jpg");
+    background-image: url("../img/bg-large.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-large@2x.jpg");
+      background-size: 2560px auto;
+    }
   }
 }

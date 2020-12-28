@@ -1,13 +1,22 @@
 .page-header {
+  position: relative;
   background-color: $blue-700;
+
+  @media (min-width: $breakpoint-large) {
+    background-color: transparent;
+    z-index: 5;
+  }
 }
 
 .page-header__wrapper {
   @media (min-width: $breakpoint-large) {
-    @include wrapper;
+    position: absolute;
+    width: 100%;
+    margin-bottom: -110px;
     background-color: rgba($black, 0.3);
     display: grid;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: 294px 700px;
+    justify-content: center;
 
     column-gap: 30px;
     padding-left: 10px;
@@ -21,15 +30,20 @@
   display: block;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
+  padding-top: 23px;
   padding-bottom: 15px;
+  border-bottom: 1px solid $black;
 
   @media (min-width: $breakpoint-medium) {
     width: $breakpoint-medium;
+    padding-top: 28px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $breakpoint-large) {
     width: 100%;
-    align-self: center;
+    align-self: start;
+    padding-top: 42px;
+    padding-left: 115px;
   }
 }

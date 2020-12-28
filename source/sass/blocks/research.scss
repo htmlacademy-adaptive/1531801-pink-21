@@ -11,33 +11,74 @@
 }
 
 .research__wrapper {
-  @media (min-width: $breakpoint-medium) {
-    @include wrapper;
-    display: block;
-    padding-left: 310px;
-    padding-top: 50px;
-    padding-bottom: 100px;
+  @include wrapper;
+  padding-left: 330px;
+  padding-top: 50px;
+  padding-bottom: 68px;
+  position: relative;
 
-    @media (min-width: $breakpoint-large) {
-      padding-left: 370px;
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/timer-24.svg");
+    background-repeat: no-repeat;
+    width: 238px;
+    height: 276px;
+    top: 55px;
+    left: 20px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 381px;
+    padding-top: 75px;
+    padding-bottom: 112px;
+
+    &::after {
+      width: 298px;
+      height: 345px;
+      top: 28px;
+      left: 11px;
+      background-size: cover;
     }
   }
 }
 
 .research__title {
   font-size: 30px;
-  line-height: 30px;
+  line-height: 36px;
   font-weight: 700;
+  padding-top: 17px;
+  padding-right: 101px;
+  margin-bottom: 0;
+
+  @media (min-width: $breakpoint-large) {
+    line-height: 30px;
+  }
 }
 
 .research__info {
-  font-size: 18px;
-  line-height: 30px;
+  margin-top: 26px;
+  margin-bottom: 30px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 26px;
+    margin-bottom: 31px;
+  }
 }
 
 .research__link {
-  font-size: 18px;
-  line-height: 30px;
   color: $pink;
   text-decoration: underline;
+
+  @media (min-width: $breakpoint-large) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

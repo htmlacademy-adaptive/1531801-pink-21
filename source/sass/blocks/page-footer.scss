@@ -4,16 +4,54 @@
   @media (min-width: $breakpoint-medium) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-top: 33px;
+    padding-bottom: 40px;
   }
 }
 
 .page-footer__logo {
   text-align: center;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-top: -6px;
+  }
+}
+
+.page-footer__logo-image-small {
+  @media (min-width: $breakpoint-large) {
+    display: none;
+  }
+}
+
+.page-footer__logo-image-large {
+  display: none;
+
+  @media (min-width: $breakpoint-large) {
+    display: block;
+  }
 }
 
 .page-footer__social {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 31px;
+  padding-bottom: 27px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-right: 14px;
+    padding-top: 36px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 23px;
+  }
+}
+
+.page-footer__copyright {
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 13px;
+  }
 }
