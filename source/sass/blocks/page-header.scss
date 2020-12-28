@@ -15,7 +15,8 @@
     margin-bottom: -110px;
     background-color: rgba($black, 0.3);
     display: grid;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: 294px 700px;
+    justify-content: center;
 
     column-gap: 30px;
     padding-left: 10px;
@@ -42,7 +43,7 @@
   @media (min-width: $breakpoint-large) {
     width: 100%;
     align-self: start;
-    padding-top: 48px;
+    padding-top: 42px;
     padding-left: 115px;
   }
 }

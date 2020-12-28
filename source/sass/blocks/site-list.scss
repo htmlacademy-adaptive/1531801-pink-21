@@ -30,6 +30,10 @@
     padding-left: 79px;
     padding-top: 44px;
     padding-bottom: 50px;
+
+    &:first-child {
+      padding-left: 0;
+    }
   }
 
   a {
