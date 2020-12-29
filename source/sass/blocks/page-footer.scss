@@ -38,15 +38,16 @@
 
 .page-footer__social {
   padding-top: 31px;
-  padding-bottom: 27px;
+  padding-bottom: 26px;
 
   @media (min-width: $breakpoint-medium) {
-    padding-right: 14px;
+    padding-right: 15px;
     padding-top: 36px;
   }
 
   @media (min-width: $breakpoint-large) {
-    padding-left: 23px;
+    padding-left: 21px;
+    padding-top: 38px;
   }
 }
 

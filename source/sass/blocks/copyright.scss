@@ -7,14 +7,27 @@
 
 .copyright__text {
   line-height: 18px;
-  padding-right: 12px;
+  padding-right: 15px;
 
   @media (min-width: $breakpoint-medium) {
     margin-bottom: 28px;
-    padding-right: 14px;
+    padding-right: 16px;
   }
 
   @media (min-width: $breakpoint-large) {
     font-size: 18px;
+    padding-right: 13px;
+  }
+}
+
+.copyright__link {
+  margin-top: 4px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin: 0;
   }
 }
