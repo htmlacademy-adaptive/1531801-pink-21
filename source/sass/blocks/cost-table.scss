@@ -1,27 +1,38 @@
 .cost-table {
   border-spacing: 0;
 
-  .cost-table__body-item {
-    &:first-child .cost-table__feature-name {
-      border-top-left-radius: 4px;
-    }
-
-    &:first-child .cost-table__availability-cell {
-      border-top-width: 2px;
-      border-top-color: $blue-700;
-    }
-
-    &:last-child .cost-table__feature-name {
-      border-bottom-left-radius: 4px;
-    }
-
-    &:last-child .cost-table__availability-cell:last-child {
-      border-bottom-right-radius: 4px;
-    }
-  }
-
   p {
     margin: 0;
+  }
+}
+
+.cost-table__body-item {
+  .cost-table__feature-name {
+    border-left-width: 2px;
+  }
+
+  &:first-child .cost-table__feature-name {
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-top-left-radius: 4px;
+  }
+
+  &:first-child .cost-table__availability-cell {
+    border-top-width: 2px;
+    border-top-color: $blue-700;
+  }
+
+  &:last-child .cost-table__feature-name {
+    border-bottom-width: 2px;
+    border-bottom-left-radius: 4px;
+  }
+
+  &:last-child .cost-table__availability-cell {
+    border-bottom-width: 2px;
+
+    &:last-child {
+      border-bottom-right-radius: 4px;
+    }
   }
 }
 
@@ -116,6 +127,10 @@
   position: relative;
   padding: 18px 1px 17px 0;
   background-color: $white;
+
+  &:last-child {
+    border-right-width: 2px;
+  }
 
   @media (min-width: $breakpoint-medium) {
     padding: 15px 20px;

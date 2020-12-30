@@ -1,11 +1,13 @@
 .page-footer__wrapper {
   @include wrapper;
+  padding-bottom: 32px;
 
   @media (min-width: $breakpoint-medium) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 0;
   }
 
   @media (min-width: $breakpoint-large) {
