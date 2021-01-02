@@ -1,5 +1,5 @@
 .costs {
-  padding-top: 100px;
+  padding-top: 101px;
   background-repeat: no-repeat;
   position: relative;
 
@@ -16,14 +16,14 @@
   }
 
   @media (min-width: $breakpoint-medium) {
-    padding-top: 96px;
-    padding-bottom: 75px;
+    padding-top: 99px;
+    padding-bottom: 67px;
     clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 11%);
   }
 
   @media (min-width: $breakpoint-large) {
     padding-top: 157px;
-    padding-bottom: 102px;
+    padding-bottom: 95px;
     clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 19%);
   }
 }

@@ -3,7 +3,7 @@
   background-image: url("../img/bg-small.jpg");
   background-repeat: no-repeat;
   background-position: 50% -24%;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-small@2x.jpg");
@@ -24,7 +24,7 @@
 
   @media (min-width: $breakpoint-large) {
     background-image: url("../img/bg-large.jpg");
-    padding-bottom: 108px;
+    padding-bottom: 107px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-large@2x.jpg");
