@@ -18,7 +18,7 @@
     grid-template-columns: 294px 700px;
     justify-content: center;
 
-    column-gap: 30px;
+    column-gap: 24px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -43,7 +43,7 @@
   @media (min-width: $breakpoint-large) {
     width: 100%;
     align-self: start;
-    padding-top: 42px;
-    padding-left: 115px;
+    padding-top: 44px;
+    padding-left: 112px;
   }
 }

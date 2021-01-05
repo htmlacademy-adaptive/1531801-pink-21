@@ -1,21 +1,47 @@
 .text-field__label {
+  display: block;
   color: $pink;
   line-height: 30px;
   text-transform: uppercase;
   padding-right: 20px;
+  padding-left: 23px;
+  padding-bottom: 5px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-left: 0;
+    padding-right: 16px;
+    padding-top: 8px;
+  }
 }
 
 .text-field__input {
   border: 2px solid $grey-100;
   border-radius: 1px;
   font-family: inherit;
-  height: 60px;
+  height: 63px;
 
   &::placeholder {
     color: $blue-700;
     font-size: 18px;
     line-height: 30px;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 18px;
+    padding-top: 12px;
+  }
+
+  &--textarea {
+    height: auto;
+
+    @media (min-width: $breakpoint-medium) {
+      height: 193px;
+      width: 500px;
+      padding-top: 2px;
+      margin-top: 43px;
+    }
+
+    @media (min-width: $breakpoint-large) {
+      height: 128px;
+      width: 820px;
+      margin-top: 40px;
+    }
   }
 }
