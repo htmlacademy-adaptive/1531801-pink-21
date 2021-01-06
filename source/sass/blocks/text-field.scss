@@ -19,29 +19,31 @@
   border-radius: 1px;
   font-family: inherit;
   height: 63px;
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 20px;
 
   &::placeholder {
     color: $blue-700;
-    font-size: 18px;
-    line-height: 30px;
-    padding-left: 18px;
-    padding-top: 12px;
   }
 
   &--textarea {
     height: auto;
+    padding-top: 16px;
+    line-height: 30px;
 
     @media (min-width: $breakpoint-medium) {
-      height: 193px;
+      line-height: 28px;
       width: 500px;
-      padding-top: 2px;
+      padding-top: 17px;
       margin-top: 43px;
     }
 
     @media (min-width: $breakpoint-large) {
-      height: 128px;
+      line-height: 17px;
       width: 820px;
       margin-top: 40px;
+      padding-top: 19px;
     }
   }
 }

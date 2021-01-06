@@ -47,10 +47,11 @@
       &::before {
         content: "";
         position: absolute;
-        width: 72px;
-        height: 2px;
-        background-color: #ffffff;
+        left: 0;
         bottom: -9px;
+        right: 0;
+        height: 2px;
+        background-color: $white;
       }
     }
   }

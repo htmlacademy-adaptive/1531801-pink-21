@@ -20,8 +20,8 @@
 .page-main__intro {
   background-image: url("../img/bg-small.jpg");
   background-position: 50% 16%;
-  height: 171px;
   padding-top: 28px;
+  padding-bottom: 43px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-small@2x.jpg");
@@ -30,8 +30,8 @@
 
   @media (min-width: $breakpoint-medium) {
     background-image: url("../img/bg-medium.jpg");
-    height: 331px;
     padding-top: 67px;
+    padding-bottom: 59px;
     background-position: 50% 28%;
 
     @media (min-resolution: 2dppx) {
@@ -42,8 +42,8 @@
 
   @media (min-width: $breakpoint-large) {
     background-image: url("../img/bg-large.jpg");
-    height: 394px;
     padding-top: 169px;
+    padding-bottom: 89px;
     background-position: 50% 0%;
 
     @media (min-resolution: 2dppx) {
