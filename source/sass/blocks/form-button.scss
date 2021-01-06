@@ -1,10 +1,11 @@
 .form-button {
   color: $white;
   background-color: $green-300;
-  border: none;
+  border: transparent;
+  border-radius: 3px;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-bottom: 23px;
-  padding-top: 23px;
+  padding-bottom: 22px;
+  padding-top: 21px;
 }

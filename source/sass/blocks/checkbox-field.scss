@@ -1,5 +1,53 @@
+.checkbox-field {
+  padding-bottom: 52px;
+  position: relative;
+
+  &:last-child {
+    padding-bottom: 48px;
+
+    @media (min-width: $breakpoint-medium) {
+      padding-bottom: 54px;
+    }
+  }
+}
+
 .checkbox-field__label {
   color: $blue-700;
   font-size: 18px;
   line-height: 30px;
+  padding-left: 60px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 37px;
+    height: 37px;
+    border: 2px solid #e5e5e5;
+    background-color: $white;
+    left: 1px;
+    top: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/form-tick.svg");
+    width: 22px;
+    height: 16px;
+    left: 10px;
+    top: 9px;
+    opacity: 0;
+  }
+}
+
+.checkbox-field__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 37px;
+  height: 37px;
+
+  &:checked + .checkbox-field__label::after {
+    opacity: 100%;
+  }
 }

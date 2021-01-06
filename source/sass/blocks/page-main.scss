@@ -1,8 +1,6 @@
 .page-main {
-
   min-width: 0;
 }
-
 
 .page-main__title {
   @include wrapper;
@@ -21,9 +19,9 @@
 
 .page-main__intro {
   background-image: url("../img/bg-small.jpg");
-  background-position: top;
-  height: 235px;
-  padding-top: 100px;
+  background-position: 50% 16%;
+  padding-top: 28px;
+  padding-bottom: 43px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-small@2x.jpg");
@@ -32,8 +30,9 @@
 
   @media (min-width: $breakpoint-medium) {
     background-image: url("../img/bg-medium.jpg");
-    height: 440px;
-    padding-top: 200px;
+    padding-top: 67px;
+    padding-bottom: 59px;
+    background-position: 50% 28%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-medium@2x.jpg");
@@ -43,6 +42,9 @@
 
   @media (min-width: $breakpoint-large) {
     background-image: url("../img/bg-large.jpg");
+    padding-top: 169px;
+    padding-bottom: 89px;
+    background-position: 50% 0%;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bg-large@2x.jpg");

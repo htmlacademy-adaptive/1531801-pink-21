@@ -29,7 +29,7 @@
     border: none;
     padding-left: 79px;
     padding-top: 46px;
-    padding-bottom: 50px;
+    padding-bottom: 46px;
 
     &:first-child {
       padding-left: 0;
@@ -42,8 +42,17 @@
 
   &--current a {
     @media (min-width: $breakpoint-large) {
-      padding-bottom: 10px;
-      border-bottom: 2px solid $white;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -9px;
+        right: 0;
+        height: 2px;
+        background-color: $white;
+      }
     }
   }
 }
