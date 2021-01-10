@@ -1,5 +1,5 @@
 .editor {
-  padding-bottom: 40px;
+  padding-bottom: 71px;
 
   @media (min-width: $breakpoint-medium) {
     padding-bottom: 0;
@@ -36,6 +36,8 @@
 
   @media (min-width: $breakpoint-large) {
     background-color: $grey-200;
+    width: 940px;
+    gap: 0;
   }
 }
 
@@ -84,7 +86,7 @@
   }
 
   @media (min-width: $breakpoint-large) {
-    margin-left: 80px;
+    margin-left: 70px;
     margin-right: 80px;
   }
 }
@@ -160,6 +162,14 @@
   margin-left: 21px;
   padding-bottom: 27px;
 
+  svg {
+    position: absolute;
+
+    path {
+      fill: $pink;
+    }
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -182,29 +192,13 @@
     grid-area: range-control;
     padding-left: 38px;
     margin-left: 42px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      background-repeat: no-repeat;
-      top: 18px;
-      width: 25px;
-      height: 25px;
-      left: -17px;
-    }
   }
 
   @media (min-width: $breakpoint-large) {
     width: 361px;
     padding-left: 73px;
     padding-top: 12px;
-
-    &::before {
-      width: 50px;
-      height: 50px;
-      top: 6px;
-      left: -19px;
-    }
+    margin-left: 52px;
   }
 
   &--active {
@@ -214,12 +208,28 @@
   }
 
   &--crop {
+    svg {
+      @media (max-width: $breakpoint-small-only) {
+        display: none;
+      }
+    }
+
     @media (min-width: $breakpoint-medium) {
       display: block;
       padding-bottom: 37px;
 
-      &::before {
-        background-image: url("../img/crop.svg");
+      svg {
+        top: 17px;
+        left: -13px;
+      }
+    }
+
+    @media (min-width: $breakpoint-large) {
+      svg {
+        width: 44px;
+        height: 44px;
+        top: 5px;
+        left: -19px;
       }
     }
   }
@@ -229,8 +239,18 @@
       display: block;
       padding-bottom: 34px;
 
-      &::before {
-        background-image: url("../img/fill.svg");
+      svg {
+        top: 18px;
+        left: -14px;
+      }
+    }
+
+    @media (min-width: $breakpoint-large) {
+      svg {
+        width: 48px;
+        height: 43px;
+        top: 5px;
+        left: -19px;
       }
     }
   }
@@ -240,16 +260,17 @@
       display: block;
       padding-bottom: 35px;
 
-      &::before {
-        background-image: url("../img/contrast.svg");
+      svg {
+        top: 20px;
+        left: -10px;
       }
     }
 
     @media (min-width: $breakpoint-large) {
-      border: none;
-
-      &::before {
-        top: 12px;
+      svg {
+        width: 32px;
+        height: 32px;
+        top: 11px;
         left: -13px;
       }
     }

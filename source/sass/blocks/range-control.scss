@@ -24,6 +24,7 @@
   border-radius: 50%;
   background: $white;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .range-control__input::-ms-thumb {
