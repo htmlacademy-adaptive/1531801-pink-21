@@ -1,5 +1,22 @@
+.editor {
+  padding-bottom: 40px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-bottom: 0;
+  }
+}
+
 .editor__wrapper--bg {
   background-color: $grey-200;
+  padding-bottom: 31px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    background-color: transparent;
+  }
 }
 
 .editor__wrapper {
@@ -16,6 +33,10 @@
       "image button-group";
     gap: 20px;
   }
+
+  @media (min-width: $breakpoint-large) {
+    background-color: $grey-200;
+  }
 }
 
 .editor__header {
@@ -23,6 +44,7 @@
 }
 
 .editor__intro {
+  margin: 0;
   line-height: 30px;
 
   @media (min-width: $breakpoint-medium) {
@@ -33,12 +55,20 @@
 .editor__intro-wrapper {
   color: $blue-700;
   background-color: $white;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 22px;
+  padding-bottom: 43px;
   text-align: center;
   line-height: 30px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 64px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-top: 58px;
+    padding-bottom: 67px;
+  }
 }
 
 .editor__image {
@@ -48,8 +78,9 @@
     grid-area: image;
     width: 300px;
     height: 400px;
-    margin-top: 55px;
+    margin-top: 57px;
     margin-bottom: 55px;
+    padding-top: 0;
   }
 
   @media (min-width: $breakpoint-large) {
@@ -62,6 +93,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 
   @media (min-width: $breakpoint-medium) {
     display: none;
@@ -69,44 +104,48 @@
 }
 
 .editor__button-group {
-  margin-top: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-top: 39px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-left: 26px;
+    padding-right: 13px;
+    padding-top: 22px;
+  }
 
   @media (min-width: $breakpoint-large) {
-    margin-top: 60px;
+    margin-top: 118px;
     display: flex;
   }
 }
 
 .editor__set {
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   position: relative;
   background: transparent;
   border: none;
-  margin-top: 40px;
-  margin-bottom: 40px;
   background-repeat: no-repeat;
 }
 
 .editor__set--crop {
   background-image: url("../img/crop.svg");
+  background-position: 18% 40%;
 }
 
 .editor__set--fill {
   background-image: url("../img/fill.svg");
+  background-position: 65% 47%;
 }
 
 .editor__set--contrast {
   background-image: url("../img/contrast.svg");
+  background-position: 20% 50%;
 }
 
 .editor__range-group {
   @media (min-width: $breakpoint-medium) {
     grid-area: range-group;
-    margin-top: 70px;
-    margin-bottom: 55px;
+    margin-top: 49px;
   }
 
   @media (min-width: $breakpoint-large) {
@@ -115,30 +154,57 @@
 }
 
 .editor__range-control {
-  border-bottom: 1px solid rgba($blue-700, 0.1);
   position: relative;
   display: none;
+  width: 240px;
+  margin-left: 21px;
+  padding-bottom: 27px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    left: -42px;
+    right: -39px;
+    bottom: -1px;
+    background-color: rgba($blue-700, 0.1);
+    height: 1px;
+
+    @media (min-width: $breakpoint-medium) {
+      left: -17px;
+      right: -18px;
+      bottom: 7px;
+    }
+  }
 
   @media (min-width: $breakpoint-medium) {
     padding-top: 12px;
     grid-area: range-control;
-    padding-left: 70px;
+    padding-left: 38px;
+    margin-left: 42px;
 
     &::before {
       position: absolute;
       content: "";
       background-repeat: no-repeat;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 44px;
-      height: 44px;
+      top: 18px;
+      width: 25px;
+      height: 25px;
+      left: -17px;
     }
   }
 
   @media (min-width: $breakpoint-large) {
-    padding-top: 30px;
+    width: 361px;
+    padding-left: 73px;
+    padding-top: 12px;
+
+    &::before {
+      width: 50px;
+      height: 50px;
+      top: 6px;
+      left: -19px;
+    }
   }
 
   &--active {
@@ -150,6 +216,7 @@
   &--crop {
     @media (min-width: $breakpoint-medium) {
       display: block;
+      padding-bottom: 37px;
 
       &::before {
         background-image: url("../img/crop.svg");
@@ -160,6 +227,7 @@
   &--fill {
     @media (min-width: $breakpoint-medium) {
       display: block;
+      padding-bottom: 34px;
 
       &::before {
         background-image: url("../img/fill.svg");
@@ -170,6 +238,7 @@
   &--contrast {
     @media (min-width: $breakpoint-medium) {
       display: block;
+      padding-bottom: 35px;
 
       &::before {
         background-image: url("../img/contrast.svg");
@@ -178,6 +247,11 @@
 
     @media (min-width: $breakpoint-large) {
       border: none;
+
+      &::before {
+        top: 12px;
+        left: -13px;
+      }
     }
   }
 }
@@ -186,10 +260,13 @@
   width: 100%;
   margin-bottom: 12px;
 
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 25px;
+  }
+
   @media (min-width: $breakpoint-large) {
     margin-bottom: 40px;
     width: 183px;
-
     margin-right: 44px;
   }
 }
