@@ -1,12 +1,12 @@
 .editor {
-  padding-bottom: 71px;
+  padding-bottom: 40px;
 
   @media (min-width: $breakpoint-medium) {
     padding-bottom: 0;
   }
 }
 
-.editor__wrapper--bg {
+.editor__wrapper-bg {
   background-color: $grey-200;
   padding-bottom: 31px;
 
@@ -106,16 +106,17 @@
 }
 
 .editor__button-group {
-  margin-top: 39px;
+  margin-top: 52px;
 
   @media (min-width: $breakpoint-medium) {
     padding-left: 26px;
     padding-right: 13px;
     padding-top: 22px;
+    margin-top: 48px;
   }
 
   @media (min-width: $breakpoint-large) {
-    margin-top: 118px;
+    margin-top: 128px;
     display: flex;
   }
 }
@@ -152,6 +153,15 @@
 
   @media (min-width: $breakpoint-large) {
     margin-bottom: 0;
+    margin-top: 48px;
+  }
+}
+
+.editor__range-icon {
+  position: absolute;
+
+  path {
+    fill: $pink;
   }
 }
 
@@ -160,15 +170,6 @@
   display: none;
   width: 240px;
   margin-left: 21px;
-  padding-bottom: 27px;
-
-  svg {
-    position: absolute;
-
-    path {
-      fill: $pink;
-    }
-  }
 
   &::after {
     position: absolute;
@@ -176,19 +177,26 @@
     background-repeat: no-repeat;
     left: -42px;
     right: -39px;
-    bottom: -1px;
+    bottom: -13px;
     background-color: rgba($blue-700, 0.1);
     height: 1px;
 
     @media (min-width: $breakpoint-medium) {
       left: -17px;
       right: -18px;
-      bottom: 7px;
+      bottom: -3px;
+    }
+  }
+
+  &:nth-child(2) {
+    &::after {
+      @media (min-width: $breakpoint-medium) {
+        bottom: 9px;
+      }
     }
   }
 
   @media (min-width: $breakpoint-medium) {
-    padding-top: 12px;
     grid-area: range-control;
     padding-left: 38px;
     margin-left: 42px;
@@ -197,7 +205,6 @@
   @media (min-width: $breakpoint-large) {
     width: 361px;
     padding-left: 73px;
-    padding-top: 12px;
     margin-left: 52px;
   }
 
@@ -208,7 +215,7 @@
   }
 
   &--crop {
-    svg {
+    .editor__range-icon {
       @media (max-width: $breakpoint-small-only) {
         display: none;
       }
@@ -216,19 +223,18 @@
 
     @media (min-width: $breakpoint-medium) {
       display: block;
-      padding-bottom: 37px;
 
-      svg {
+      .editor__range-icon {
         top: 17px;
         left: -13px;
       }
     }
 
     @media (min-width: $breakpoint-large) {
-      svg {
+      .editor__range-icon {
         width: 44px;
         height: 44px;
-        top: 5px;
+        top: 6px;
         left: -19px;
       }
     }
@@ -237,19 +243,18 @@
   &--fill {
     @media (min-width: $breakpoint-medium) {
       display: block;
-      padding-bottom: 34px;
 
-      svg {
-        top: 18px;
+      .editor__range-icon {
+        top: 29px;
         left: -14px;
       }
     }
 
     @media (min-width: $breakpoint-large) {
-      svg {
+      .editor__range-icon {
         width: 48px;
         height: 43px;
-        top: 5px;
+        top: 17px;
         left: -19px;
       }
     }
@@ -258,19 +263,18 @@
   &--contrast {
     @media (min-width: $breakpoint-medium) {
       display: block;
-      padding-bottom: 35px;
 
-      svg {
-        top: 20px;
+      .editor__range-icon {
+        top: 17px;
         left: -10px;
       }
     }
 
     @media (min-width: $breakpoint-large) {
-      svg {
+      .editor__range-icon {
         width: 32px;
         height: 32px;
-        top: 11px;
+        top: 9px;
         left: -13px;
       }
     }

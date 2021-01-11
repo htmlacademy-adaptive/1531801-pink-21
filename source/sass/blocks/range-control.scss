@@ -1,9 +1,30 @@
-
+.range-control {
+  position: relative;
+}
 
 .range-control__input {
   appearance: none;
   width: 100%;
   background: transparent;
+  height: 32px;
+
+  &--crop {
+    @media (min-width: $breakpoint-medium) {
+      height: 55px;
+    }
+  }
+
+  &--fill {
+    @media (min-width: $breakpoint-medium) {
+      height: 77px;
+    }
+  }
+
+  &--contrast {
+    @media (min-width: $breakpoint-medium) {
+      height: 50px;
+    }
+  }
 }
 
 .range-control__input::-webkit-slider-thumb {

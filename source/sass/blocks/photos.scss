@@ -185,7 +185,7 @@
   @media (min-width: $breakpoint-medium) {
     display: flex;
     flex-direction: column;
-    height: 155px;
+    flex-grow: 1;
     padding-top: 23px;
     padding-left: 30px;
     padding-bottom: 23px;
