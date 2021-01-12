@@ -13,13 +13,14 @@
 
   @media (min-width: $breakpoint-large) {
     grid-template-columns: 300px 300px 300px;
-    row-gap: 55px;
+    row-gap: 54px;
     column-gap: 20px;
   }
 }
 
 .photos__intro {
   line-height: 30px;
+  margin: 0;
 
   @media (min-width: $breakpoint-medium) {
     font-size: 18px;
@@ -28,11 +29,25 @@
 
 .photos__intro-wrapper {
   @include wrapper;
-  padding-top: 54px;
-  padding-bottom: 60px;
-  line-height: 30px;
+  padding-top: 44px;
+  padding-bottom: 50px;
+  padding-left: 37px;
+  padding-right: 40px;
   text-align: center;
   color: $blue-700;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 91px;
+    padding-bottom: 77px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 89px;
+  }
 }
 
 .photos__item {
@@ -46,30 +61,74 @@
   &--best {
     grid-column: 1 / -1;
     width: auto;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 140px;
+      height: 36px;
+      background-image: url("../img/best-photo.svg");
+      top: 0;
+      right: 20px;
+
+      @media (min-width: $breakpoint-medium) {
+        top: 57px;
+        right: 0;
+      }
+
+      @media (min-width: $breakpoint-large) {
+        top: 54px;
+        right: 0;
+      }
+    }
 
     .photos__description {
       width: 280px;
       margin: 0 auto;
+
+      @media (min-width: $breakpoint-medium) {
+        padding-top: 23px;
+        padding-left: 30px;
+        padding-bottom: 19px;
+        flex-direction: row;
+      }
+
+      @media (min-width: $breakpoint-large) {
+        padding-left: 28px;
+      }
     }
   }
 
   @media (min-width: $breakpoint-medium) {
-    margin-bottom: 30px;
     min-height: 455px;
     width: 300px;
+    margin-bottom: 0;
 
     &--best {
       width: 620px;
-      min-height: 121px;
       flex-direction: row;
+      margin-bottom: 30px;
 
       .photos__description {
         width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 22px;
+        padding-bottom: 24px;
+        height: auto;
+      }
+
+      .photos__author-name {
+        padding-top: 2px;
       }
 
       .photos__like-group {
         margin-left: auto;
-        padding-bottom: 0;
+        padding-top: 0;
+        padding-right: 28px;
+        margin-right: 0;
+        margin-top: 3px;
       }
 
       .photos__text {
@@ -83,7 +142,7 @@
 
     &--best {
       width: 940px;
-      min-height: 96px;
+      margin-bottom: -4px;
     }
   }
 }
@@ -110,45 +169,48 @@
       object-fit: cover;
       transform: translate(-50%);
     }
+
+    @media (min-width: $breakpoint-large) {
+      height: 506px;
+    }
   }
 }
 
 .photos__description {
   background-color: $grey-200;
+  padding-top: 18px;
+  padding-left: 16px;
+  padding-bottom: 19px;
 
   @media (min-width: $breakpoint-medium) {
-    height: 155px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 23px;
+    padding-left: 30px;
+    padding-bottom: 23px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    padding-left: 28px;
   }
 }
 
 .photos__author-name {
   font-weight: 700;
-  padding-left: 17px;
   color: $blue-700;
-  padding-top: 25px;
-
-  @media (min-width: $breakpoint-medium) {
-    padding-top: 30px;
-    padding-left: 30px;
-  }
 }
 
 .photos__time {
   font-weight: 300;
+  font-size: 12px;
   text-transform: uppercase;
   color: $blue-700;
-  padding-left: 3px;
 }
 
 .photos__text {
   color: $blue-700;
   margin: 0;
-  padding-left: 17px;
-  padding-top: 15px;
-
-  @media (min-width: $breakpoint-medium) {
-    padding-left: 30px;
-  }
 }
 
 .photos__like-group {
@@ -156,15 +218,11 @@
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding-top: 25px;
-  padding-bottom: 10px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-top: 10px;
   margin-top: auto;
 
   @media (min-width: $breakpoint-medium) {
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-right: 26px;
   }
 }
 
@@ -191,7 +249,7 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
-  padding-left: 15px;
+  padding-left: 13px;
   padding-right: 10px;
 
   @media (min-width: $breakpoint-medium) {
