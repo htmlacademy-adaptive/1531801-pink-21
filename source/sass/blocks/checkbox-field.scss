@@ -22,7 +22,7 @@
     content: "";
     width: 37px;
     height: 37px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $grey-200;
     background-color: $white;
     left: 1px;
     top: 0;
@@ -37,6 +37,18 @@
     left: 10px;
     top: 9px;
     opacity: 0;
+  }
+
+  &:hover {
+    &::before {
+      border-color: $blue-700;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $pink;
+    }
   }
 }
 

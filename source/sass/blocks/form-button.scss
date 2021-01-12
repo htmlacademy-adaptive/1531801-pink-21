@@ -8,4 +8,16 @@
   text-transform: uppercase;
   padding-bottom: 22px;
   padding-top: 21px;
+
+  &:hover {
+    background-color: $green-500;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $grey-200;
+  }
 }

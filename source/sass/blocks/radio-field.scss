@@ -36,14 +36,26 @@
     content: "";
     width: 37px;
     height: 37px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $grey-200;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: $white;
     left: 2px;
     top: -3px;
 
     @media (min-width: $breakpoint-medium) {
       left: 11px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      border-color: $blue-700;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $pink;
     }
   }
 }

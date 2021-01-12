@@ -20,6 +20,18 @@
   border-top: 1px solid $grey-500;
   border-bottom: 1px solid $black;
 
+  a {
+    color: $white;
+  }
+
+  a:hover {
+    color: $pink;
+  }
+
+  a:active {
+    color: rgba($pink, 0.3);
+  }
+
   @media (min-width: $breakpoint-large) {
     background-color: transparent;
     font-size: 18px;
@@ -34,24 +46,24 @@
     &:first-child {
       padding-left: 0;
     }
-  }
 
-  a {
-    color: $white;
-  }
+    a:active {
+      color: rgba($white, 0.3);
+    }
 
-  &--current a {
-    @media (min-width: $breakpoint-large) {
-      position: relative;
+    &--current a {
+      @media (min-width: $breakpoint-large) {
+        position: relative;
 
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -9px;
-        right: 0;
-        height: 2px;
-        background-color: $white;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -9px;
+          right: 0;
+          height: 2px;
+          background-color: $white;
+        }
       }
     }
   }

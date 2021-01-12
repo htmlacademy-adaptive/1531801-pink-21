@@ -38,6 +38,10 @@
   margin-top: -6px;
 }
 
+.range-control__input:active::-webkit-slider-thumb {
+  background-color: $pink;
+}
+
 .range-control__input::-moz-range-thumb {
   border: 2px solid $pink;
   height: 14px;
@@ -48,6 +52,10 @@
   box-sizing: border-box;
 }
 
+.range-control__input:active::-moz-range-thumb {
+  background-color: $pink;
+}
+
 .range-control__input::-ms-thumb {
   border: 2px solid $pink;
   height: 14px;
@@ -55,6 +63,10 @@
   border-radius: 50%;
   background: $white;
   cursor: pointer;
+}
+
+.range-control__input:active::-ms-thumb {
+  background-color: $pink;
 }
 
 .range-control__input::-webkit-slider-runnable-track {
