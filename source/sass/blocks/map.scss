@@ -27,6 +27,10 @@
   @media (min-width: $breakpoint-medium) {
     padding-bottom: 0;
   }
+
+  @media (min-width: $breakpoint-large) {
+    padding-bottom: 12px;
+  }
 }
 
 .map__frame {

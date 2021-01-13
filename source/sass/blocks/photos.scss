@@ -63,6 +63,10 @@
     width: auto;
     position: relative;
 
+    picture {
+      width: 100%;
+    }
+
     &::after {
       content: "";
       position: absolute;
