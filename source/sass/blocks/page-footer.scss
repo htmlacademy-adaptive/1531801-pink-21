@@ -11,8 +11,12 @@
   }
 
   @media (min-width: $breakpoint-large) {
-    padding-top: 60px;
+    padding-top: 20px;
     padding-bottom: 40px;
+
+    &--catalog {
+      padding-top: 62px;
+    }
   }
 }
 

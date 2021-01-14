@@ -20,3 +20,19 @@
     }
   }
 }
+
+.social__icon:hover {
+  circle {
+    opacity: 100%;
+  }
+}
+
+.social__icon:active {
+  path {
+    opacity: 30%;
+  }
+
+  circle {
+    opacity: 10%;
+  }
+}

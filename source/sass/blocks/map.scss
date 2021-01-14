@@ -27,17 +27,39 @@
   @media (min-width: $breakpoint-medium) {
     padding-bottom: 0;
   }
+
+  @media (min-width: $breakpoint-large) {
+    padding-bottom: 12px;
+  }
 }
 
 .map__frame {
+  background-image: url("../img/map-small.png");
   width: 100%;
   height: 200px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-small@2x.png");
+    background-size: 320px auto;
+  }
+
   @media (min-width: $breakpoint-medium) {
     height: 374px;
+    background-image: url("../img/map-medium.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-medium@2x.png");
+      background-size: 660px auto;
+    }
   }
 
   @media (min-width: $breakpoint-large) {
     height: 497px;
+    background-image: url("../img/map-large.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-large@2x.png");
+      background-size: 1200px auto;
+    }
   }
 }

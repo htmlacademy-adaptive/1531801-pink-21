@@ -97,6 +97,15 @@
     background-repeat: no-repeat;
     border: none;
 
+    &:hover {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 10%;
+    }
+
+
     &--previous {
       top: 213px;
       left: 10px;
