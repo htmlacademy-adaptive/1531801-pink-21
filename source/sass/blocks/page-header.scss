@@ -36,14 +36,48 @@
 
   @media (min-width: $breakpoint-medium) {
     width: $breakpoint-medium;
-    padding-top: 44px;
+    padding-top: 27px;
     padding-bottom: 34px;
   }
 
   @media (min-width: $breakpoint-large) {
     width: 100%;
     align-self: start;
-    padding-top: 44px;
-    padding-left: 112px;
+    padding-top: 26px;
+    padding-left: 39px;
+  }
+}
+
+.page-header__logo-image {
+  fill: $white;
+
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    fill: rgba($white, 0.3);
+  }
+
+  &--small {
+    @media (min-width: $breakpoint-medium) {
+      display: none;
+    }
+  }
+
+  &--medium {
+    @media (max-width: $breakpoint-small-only) {
+      display: none;
+    }
+
+    @media (min-width: $breakpoint-large) {
+      display: none;
+    }
+  }
+
+  &--large {
+    @media (max-width: $breakpoint-before-large) {
+      display: none;
+    }
   }
 }

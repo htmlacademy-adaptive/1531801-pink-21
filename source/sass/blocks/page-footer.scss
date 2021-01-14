@@ -28,17 +28,29 @@
   }
 }
 
-.page-footer__logo-image-small {
-  @media (min-width: $breakpoint-large) {
-    display: none;
+.page-footer__logo-image {
+
+  fill: $blue-700;
+
+  &:hover {
+    fill: $pink;
   }
-}
 
-.page-footer__logo-image-large {
-  display: none;
+  &:active {
+    opacity: 30%;
+    fill: $blue-700;
+  }
 
-  @media (min-width: $breakpoint-large) {
-    display: block;
+  &--medium {
+    @media (min-width: $breakpoint-large) {
+      display: none;
+    }
+  }
+
+  &--large {
+    @media (max-width: $breakpoint-before-large) {
+      display: none;
+    }
   }
 }
 
