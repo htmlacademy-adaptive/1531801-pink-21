@@ -38,6 +38,11 @@
     width: $breakpoint-medium;
     padding-top: 27px;
     padding-bottom: 34px;
+
+    svg {
+      width: 145px;
+      height: 40px;
+    }
   }
 
   @media (min-width: $breakpoint-large) {
@@ -45,6 +50,10 @@
     align-self: start;
     padding-top: 26px;
     padding-left: 39px;
+
+    svg {
+      width: 147px;
+    }
   }
 }
 

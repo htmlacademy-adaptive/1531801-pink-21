@@ -26,10 +26,15 @@
   @media (min-width: $breakpoint-medium) {
     margin-top: -6px;
   }
+
+  @media (min-width: $breakpoint-large) {
+    svg {
+      width: 147px;
+    }
+  }
 }
 
 .page-footer__logo-image {
-
   fill: $blue-700;
 
   &:hover {
