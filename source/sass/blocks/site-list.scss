@@ -20,6 +20,22 @@
   border-top: 1px solid $grey-500;
   border-bottom: 1px solid $black;
 
+  @media (max-width: $breakpoint-before-large) {
+    &:first-child {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        color: $black;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
   a {
     color: $white;
   }

@@ -8,6 +8,10 @@
   }
 }
 
+.page-header--transparent {
+  background-color: rgba($black, 0.3);
+}
+
 .page-header__wrapper {
   @media (min-width: $breakpoint-large) {
     position: absolute;
@@ -25,6 +29,7 @@
 }
 
 .page-header__logo {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   display: block;
@@ -32,7 +37,6 @@
   padding-right: 20px;
   padding-top: 23px;
   padding-bottom: 15px;
-  border-bottom: 1px solid $black;
 
   @media (min-width: $breakpoint-medium) {
     width: $breakpoint-medium;

@@ -9,6 +9,7 @@
 </head>
 
 <body class="page__body">
+
   <svg style="display: none;">
     <symbol id="logo-small" viewBox="0 0 74 23">
       <path
@@ -111,7 +112,7 @@
     </symbol>
   </svg>
 
-  <header class="page-header">
+  <header class="page__page-header page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo">
         <svg width="74" height="23">
@@ -120,7 +121,7 @@
           <use class="page-header__logo-image page-header__logo-image--large" xlink:href=#logo-large></use>
         </svg>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -452,6 +453,9 @@
       </div>
     </div>
   </footer>
+  <script src="js/menu.js">
+  </script>
 </body>
+
 
 </html>

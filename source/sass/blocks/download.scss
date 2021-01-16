@@ -2,7 +2,7 @@
   background-color: $blue-700;
   background-image: url("../img/bg-small.jpg");
   background-repeat: no-repeat;
-  background-position: 50% -24%;
+  background-position: 50% 0;
   padding-bottom: 15px;
 
   @media (min-resolution: 2dppx) {
@@ -54,7 +54,7 @@
     position: absolute;
     width: 660px;
     height: 545px;
-    top: 3px;
+    top: 112px;
     left: 0;
     z-index: -1;
   }
@@ -74,7 +74,7 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
-  padding-top: 24px;
+  padding-top: 92px;
   padding-bottom: 28px;
   text-align: center;
 
@@ -84,6 +84,7 @@
     width: 50%;
     padding-right: 50px;
     padding-bottom: 9px;
+    padding-top: 133px;
   }
 
   @media (min-width: $breakpoint-large) {
