@@ -216,7 +216,7 @@
     @media (min-width: $breakpoint-medium) {
       display: block;
 
-      ::before {
+      &::before {
         content: "";
         position: absolute;
         width: 22px;
@@ -228,7 +228,7 @@
     }
 
     @media (min-width: $breakpoint-large) {
-      ::before {
+      &::before {
         width: 44px;
         height: 44px;
         top: 5px;
@@ -241,7 +241,7 @@
     @media (min-width: $breakpoint-medium) {
       display: block;
 
-      ::before {
+      &::before {
         content: "";
         position: absolute;
         width: 24px;
@@ -253,7 +253,7 @@
     }
 
     @media (min-width: $breakpoint-large) {
-      ::before {
+      &::before {
         width: 48px;
         height: 43px;
         top: 16px;
@@ -266,7 +266,7 @@
     @media (min-width: $breakpoint-medium) {
       display: block;
 
-      ::before {
+      &::before {
         content: "";
         position: absolute;
         width: 16px;
@@ -278,7 +278,7 @@
     }
 
     @media (min-width: $breakpoint-large) {
-      ::before {
+      &::before {
         width: 32px;
         height: 32px;
         top: 8px;

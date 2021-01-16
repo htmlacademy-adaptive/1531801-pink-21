@@ -26,19 +26,36 @@
   @media (min-width: $breakpoint-medium) {
     margin-top: -6px;
   }
-}
 
-.page-footer__logo-image-small {
   @media (min-width: $breakpoint-large) {
-    display: none;
+    svg {
+      width: 147px;
+    }
   }
 }
 
-.page-footer__logo-image-large {
-  display: none;
+.page-footer__logo-image {
+  fill: $blue-700;
 
-  @media (min-width: $breakpoint-large) {
-    display: block;
+  &:hover {
+    fill: $pink;
+  }
+
+  &:active {
+    opacity: 30%;
+    fill: $blue-700;
+  }
+
+  &--medium {
+    @media (min-width: $breakpoint-large) {
+      display: none;
+    }
+  }
+
+  &--large {
+    @media (max-width: $breakpoint-before-large) {
+      display: none;
+    }
   }
 }
 
