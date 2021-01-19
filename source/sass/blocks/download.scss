@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-position: 50% 0;
   padding-bottom: 15px;
+  overflow: hidden;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-small@2x.jpg");
