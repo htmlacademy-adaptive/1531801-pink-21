@@ -12,3 +12,15 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
+
+.page__page-header {
+  margin-bottom: -69px;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: -107px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    margin-bottom: 0;
+  }
+}

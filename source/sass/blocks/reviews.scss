@@ -108,14 +108,16 @@
 
     &--previous {
       top: 213px;
-      left: 10px;
+      left: 0;
       background-image: url("../img/left-arrow.svg");
+      background-position-x: 50%;
     }
 
     &--next {
       top: 213px;
-      right: -8px;
+      right: 0;
       background-image: url("../img/right-arrow.svg");
+      background-position-x: 50%;
     }
   }
 }

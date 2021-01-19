@@ -35,9 +35,13 @@
     border-color: $pink;
   }
 
-
   &::placeholder {
     color: $blue-700;
+  }
+
+  &::-moz-placeholder,
+  &:-moz-placeholder {
+    opacity: 1;
   }
 
   &--textarea {
