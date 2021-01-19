@@ -19,7 +19,7 @@
     margin-bottom: -110px;
     background-color: rgba($black, 0.3);
     display: grid;
-    grid-template-columns: 294px 700px;
+    grid-template-columns: 296px 1fr;
     justify-content: center;
 
     column-gap: 24px;
@@ -53,7 +53,7 @@
     width: 100%;
     align-self: start;
     padding-top: 26px;
-    padding-left: 39px;
+    padding-left: 120px;
 
     svg {
       width: 147px;
