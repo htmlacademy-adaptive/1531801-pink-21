@@ -336,13 +336,16 @@
   &--feedback {
     padding-bottom: 24px;
     position: relative;
+    min-height: 310px;
 
     @media (min-width: $breakpoint-medium) {
       padding-bottom: 29px;
+      min-height: 294px;
     }
 
     @media (min-width: $breakpoint-large) {
       padding-bottom: 27px;
+      min-height: 215px;
     }
 
     .form__item {
@@ -435,14 +438,14 @@
 
   @media (min-width: $breakpoint-medium) {
     justify-self: end;
-    padding-top: 30px;
+    padding-top: 27px;
     padding-bottom: 27px;
   }
+}
 
-  &--short {
-    @media (max-width: $breakpoint-before-large) {
-      @include visually-hidden;
-    }
+.form__short-legend {
+  @media (max-width: $breakpoint-before-large) {
+    @include visually-hidden;
   }
 }
 

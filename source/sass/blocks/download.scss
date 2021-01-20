@@ -2,7 +2,11 @@
   background-color: $blue-700;
   background-image: url("../img/bg-small.jpg");
   background-repeat: no-repeat;
+<<<<<<< Updated upstream
   background-position: 50% -24%;
+=======
+  background-position: 50% 24px;
+>>>>>>> Stashed changes
   padding-bottom: 15px;
 
   @media (min-resolution: 2dppx) {
@@ -49,9 +53,11 @@
   margin-left: -20px;
   max-width: none;
   display: block;
+  position: absolute;
+  top: 180px;
+  left: calc(50% - 140px);
 
   @media (min-width: $breakpoint-medium) {
-    position: absolute;
     width: 660px;
     height: 545px;
     top: 3px;
@@ -69,16 +75,24 @@
 }
 
 .download__slogan {
-  margin: 0;
+  margin: 0 auto;
   color: $white;
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
+<<<<<<< Updated upstream
   padding-top: 24px;
   padding-bottom: 28px;
+=======
+  padding-top: 92px;
+  padding-bottom: 316px;
+>>>>>>> Stashed changes
   text-align: center;
+  min-width: 150px;
+  width: 280px;
 
   @media (min-width: $breakpoint-medium) {
+    margin: 0;
     font-size: 40px;
     line-height: 48px;
     width: 50%;

@@ -1,3 +1,39 @@
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.slider__costs {
+  padding-top: 28px;
+  padding-bottom: 33px;
+
+  @media (min-width: $breakpoint-medium) {
+    display: none;
+  }
+
+  button {
+    margin: 0 8px;
+    align-self: center;
+  }
+}
+
+.slider__reviews {
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 25px;
+  }
+
+  @media (min-width: $breakpoint-large) {
+    display: none;
+  }
+
+  button {
+    margin-left: 6px;
+    margin-right: 11px;
+    align-self: center;
+  }
+}
+
 .slider__item {
   display: none;
 }

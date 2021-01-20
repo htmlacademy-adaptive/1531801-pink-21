@@ -34,20 +34,3 @@
   align-items: center;
   overflow: hidden;
 }
-
-.costs__toggles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-top: 28px;
-  padding-bottom: 33px;
-
-  @media (min-width: $breakpoint-medium) {
-    display: none;
-  }
-
-  button {
-    margin: 0 8px;
-    align-self: center;
-  }
-}
