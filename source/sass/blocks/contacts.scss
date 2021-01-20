@@ -1,8 +1,8 @@
 .contacts {
   @include wrapper;
   position: relative;
-  // z-index: 1;
   padding-top: 40px;
+  padding-bottom: 34px;
 
   @media (min-width: $breakpoint-medium) {
     display: flex;
@@ -10,6 +10,7 @@
     flex-direction: row;
     justify-content: space-around;
     padding-top: 36px;
+    padding-bottom: 22px;
   }
 
   @media (min-width: $breakpoint-large) {
@@ -68,6 +69,17 @@
   font-weight: 300;
   font-style: normal;
   margin-bottom: 33px;
+  cursor: pointer;
+
+  &:hover {
+    color: $blue-700;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 30%;
+    text-decoration: none;
+  }
 
   @media (min-width: $breakpoint-medium) {
     margin-bottom: 25px;
@@ -104,29 +116,23 @@
     padding-top: 8px;
     padding-left: 13px;
   }
-
-  .contacts__item:hover {
-    color: $blue-700;
-    text-decoration: underline;
-  }
-
-  .contacts__item:active {
-    opacity: 30%;
-    text-decoration: none;
-  }
 }
 
 .contacts__address {
   text-align: center;
-  padding-top: 7px;
+  padding-top: 20px;
 
   @media (min-width: $breakpoint-medium) {
     width: 100%;
-    padding-top: 12px;
+    padding-top: 25px;
   }
 
   @media (min-width: $breakpoint-large) {
     width: 33%;
     padding-top: 7px;
+  }
+
+  address {
+    font-style: normal;
   }
 }
