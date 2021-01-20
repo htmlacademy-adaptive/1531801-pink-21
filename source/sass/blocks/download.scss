@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-position: 50% 24px;
   padding-bottom: 15px;
+  overflow: hidden;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-small@2x.jpg");
@@ -40,7 +41,9 @@
 }
 
 .download__inner-wrapper {
-  @include wrapper;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   position: relative;
   z-index: 1;
 }
@@ -56,7 +59,7 @@
   @media (min-width: $breakpoint-medium) {
     width: 660px;
     height: 545px;
-    top: 3px;
+    top: 112px;
     left: 0;
     z-index: -1;
   }
@@ -89,6 +92,8 @@
     width: 50%;
     padding-right: 50px;
     padding-bottom: 9px;
+    padding-top: 133px;
+    padding-left: 20px;
   }
 
   @media (min-width: $breakpoint-large) {
@@ -98,6 +103,7 @@
     padding-right: 4px;
     padding-bottom: 18px;
     padding-top: 138px;
+    padding-left: 0;
   }
 }
 
