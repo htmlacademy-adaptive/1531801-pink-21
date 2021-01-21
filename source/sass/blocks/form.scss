@@ -87,7 +87,6 @@
 
   @media (min-width: $breakpoint-large) {
     grid-area: contacts;
-    padding-top: 1px;
   }
 }
 
@@ -138,6 +137,18 @@
         display: grid;
         grid-template-columns: min-content 1fr;
         padding-bottom: 52px;
+
+        &:last-child {
+          padding-bottom: 54px;
+        }
+      }
+    }
+
+    @media (min-width: $breakpoint-large) {
+      .form__item {
+        &:last-child {
+          padding-bottom: 0;
+        }
       }
     }
   }
@@ -208,6 +219,18 @@
 
         .checkbox-field__input:checked + .checkbox-field__label::after {
           left: 20px;
+        }
+      }
+    }
+
+    .form__item {
+      padding-bottom: 45px;
+
+      &:last-child {
+        padding-bottom: 43px;
+
+        @media (min-width: $breakpoint-medium) {
+          padding-bottom: 47px;
         }
       }
     }

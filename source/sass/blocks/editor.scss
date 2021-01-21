@@ -6,7 +6,7 @@
   }
 }
 
-.editor__wrapper-bg {
+.editor__wrapper {
   background-color: $grey-200;
   padding-bottom: 31px;
 
@@ -19,7 +19,7 @@
   }
 }
 
-.editor__wrapper {
+.editor__form {
   @include wrapper;
   display: flex;
   flex-wrap: wrap;
